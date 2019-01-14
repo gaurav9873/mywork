@@ -1,6 +1,5 @@
 <?php 
 	include("includes/conn.php");
-	
 	if(!isset($_SESSION['buyer']) || $_SESSION['buyer']==""){
 		header("location:index.php");
 		exit; 
