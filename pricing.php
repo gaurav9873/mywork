@@ -22,7 +22,7 @@
       <div class="cont-shadow back2">
         <div id="body_cont_in">
         <div class="top-tlt">
-       <h1>Simply the best car deals. With no added tension!</h1>
+       <h1>Simply the best sdsdsdsd sdsdsd sdsdsdsdsdcar deals. With no added tension!</h1>
         </div>
         <div class="left_navi_cont">
 			<?php include("left_menu.php");?>       
@@ -35,11 +35,15 @@
         <div class="why_twitter_cont"><a href="#"><img src="images/facebook_like.jpg" alt="" border="0" /></a>
         
           <a href="#"><img src="images/t-like.gif" alt="" border="0" /></a></div>
+          <a href="#"><img src="images/t-like.gif" alt="" border="0" /></a></div>
+          <a href="#"><img src="images/t-like.gif" alt="" border="0" /></a></div>
           <div class="about_caroye_cont">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <p>Lorem ipsum dolor sit asdsdsdmet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
           <div class="plus_cont">
           <div class="plus_top"></div>
           <div class="plus_middle"><h1>Plus</h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
           <h2><span>$790</span> $490</h2>
           <p><span2>Nullam dictum felis eu pede mollis</span2> </p>
@@ -53,9 +57,13 @@
           </div>
           <div class="plus_bottom"></div>
           </div>
-                    
+          </div>
+          </div>
+
           <div class="basic_cont">
           <div class="basic_top"></div>
+          <div class="basic_middle"><h1>Basic</h1>
+          <div class="basic_middle"><h1>Basic</h1>
           <div class="basic_middle"><h1>Basic</h1>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
           <h2><span>$790</span> $490</h2>
@@ -72,8 +80,8 @@
           <div class="basic_bottom"></div>
           </div>
           <p style="margin-left:60px; margin-top:10px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-          <div class="remember_cont"><h1>Remember: all plans include these benefits</h1>
-          <img src="images/remember_guarantee_img.jpg" alt="" />
+          <div class="remember_link">
+          <div class="remember_link">
           <div class="remember_link">
           <ul><li><a href="#">Vivamus elementum semper nisi. Aenean</a></li>
           <li><a href="#">pretium. Integer tincidunt. Cras dapibus.  </a></li>
