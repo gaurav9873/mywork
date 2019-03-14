@@ -51,7 +51,10 @@
       <div class="img-box"><img src="images/compare-car-non.jpg" alt="" width="218" height="102" /></div>
       
   <div class="view-0ffer_button"><span><a href="#">Add A Cart</a></span></div>
-  
+  <div class="view-0ffer_button"><span><a href="#">Add A xzxzx</a></span></div>
+  <div class="view-0ffer_button"><span><a href="#">Add A Cart</a></span></div>
+  <div class="view-0ffer_button"><span><a href="#">Add A dfdfd</a></span></div>
+
   
   </div>
   <div class="disply-car-box">
@@ -222,6 +225,11 @@
     <td width="25%" class="table-td-left-bord"> ...</td>
      <td width="25%" class="table-td-left-bord"> ...</td>
      <td width="25%" class="table-td-left-bord"> ...</td>
+     <td width="25%">...</td>
+     <td width="25%">...</td>
+     <td width="25%">...</td>
+     <td width="25%">...</td>
+     <td width="25%">...</td>
      <td width="25%">...</td>
   </tr>
 </table>

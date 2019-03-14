@@ -12,4 +12,3 @@ $conn = mysql_connect(HOST ,USER ,PASSWORD);
 mysql_select_db(DATABASE,$conn);
 
 define("SITEPATH","http://localhost/caroye/");
-?>

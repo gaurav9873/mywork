@@ -13,5 +13,3 @@ $conn = mysql_connect(HOST ,USER ,PASSWORD)or die("not connect from user");
 mysql_select_db(DATABASE,$conn) or die("not connect from database");
 
 define("SITEPATH","http://localhost/caroye/");
-
-?>

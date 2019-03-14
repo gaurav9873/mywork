@@ -8,7 +8,7 @@ __HTML_END;
 
 $design_footer= <<<__HTML_END
 
-<!-- Add your site's footer here -->
+<!-- Add your site's footer hexzxzxzxzxzxzre -->
 
 __HTML_END;
 

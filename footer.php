@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="footer_right">
-        <p>&copy; carOye.com 2011. All rights reserved.</p>
+        <p>&copy; carOye.com 2011. All rights reserved.asasasas</p>
         <div class="dealer_sign"><a href="dealer-signup.php"><img src="images/dealer_sign_buttons.png" alt="" /></a></div>
       </div>
     </div>

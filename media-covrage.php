@@ -111,7 +111,7 @@
           <div class="founder_cont_media_fotter">
           <div class="founder_image_media"><img src="images/media-covrage_image2.jpg" alt="" width="260" height="100" /></div>
           <div class="founder_media_text_cont">
-          <h1> CarWoo Takes the Cheap Suit Out Of Car Sales</h1>
+          <h1> CarWoo Takes the Cheap Suit Out Of Carczczczdsd Sales</h1>
           <p>&quot;CarOye...[connects] you with firm offers from dealers while preserving your privacy&quot; </p>
           <div class="read_full_article"><a href="#">
           Read full article
