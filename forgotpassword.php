@@ -87,7 +87,7 @@ function chkreg(){
       <div class="cont-shadow back2">
         <div id="body_cont_in">
         <div class="top-tlt">
-       		<h1>Reset your password</h1>
+       		<h1>Reset your passworddcdddfdfdf</h1>
         </div>
         </div>
 	<div id="sing_up_cont_in">
