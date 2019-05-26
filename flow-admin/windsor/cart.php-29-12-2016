@@ -1,0 +1,175 @@
+<?php 
+include_once 'header.php'; 
+
+if(!empty($_GET["action"])) {
+	$action = $_GET['action'];
+	
+	switch($action){
+		case "empty":
+			unset($_SESSION["cart_products"]);
+			header("location:http://54.191.172.136:82/florist-windsor");
+		break;
+	}
+}
+
+
+if(isset($_POST['product_quantity'])){
+	if(isset($_POST["product_quantity"]) && is_array($_POST["product_quantity"])){
+		foreach($_POST["product_quantity"] as $k => $v){
+			if(is_numeric($v)){
+				$_SESSION["cart_products"][$k]["quantity"] = $v;
+			}
+		}
+	}
+}
+
+?>
+
+
+<script>
+$(document).ready(function(){
+
+	$(".pqty").on('change', function(){
+	
+		var key = $(this).attr('data-key');
+		var qty = $(this).parent().find('.pqty').val();
+		var wait = $(this).next();
+		if(qty){
+			$.ajax({
+				url:'action/cart.php',
+				type:'post',
+				data:{action:'update_qty', cart_key:key, quantity:qty},
+				cache:false,
+				beforeSend:function(){
+					$(wait).show();
+				},
+				complete:function(){
+				},
+				success:function(resp){
+					window.location.href='';
+					//alert(resp);
+				}
+			});
+		}
+	});
+		
+	
+	$(".closeBtn").on('click', function(){
+		var cartID = $(this).parent().attr('data-row-id');
+		var checkstr =  confirm('are you sure you want to remove this?');
+		if(checkstr == true){
+			if(cartID){	
+				$.ajax({
+					url:'action/cart.php',
+					type:'post',
+					data:{action:'remove_item', item_id:cartID},
+					cache:false,
+					beforeSend:function(){},
+					complete:function(){},
+					success:function(responce){
+						$('.cartDetail').filter("[data-row-id='" + cartID + "']").fadeOut(1000, function(){ 
+							$(this).remove();
+						});
+					}
+				});
+			}
+	   }
+	});
+	
+});
+</script>
+
+<section>
+	<div class="container-fluid">
+    	<div class="row">
+    		<div class="col-lg-12">
+                <h2>Your Shopping Cart</h2> 
+                <div class="cardImg"><img src="images/paymoney.png" alt="" /></div> 
+                <h3 class="heading3">Cart Items</h3>
+                <form name="product_frm" action="" method="post">
+                <?php 
+                $gift_total_price = 0;
+                if(!empty($_SESSION['cart_products'])){
+					
+					foreach($_SESSION['cart_products'] as $key=>$val){
+						
+						$quantity = $val['quantity'];
+						$pro_size = $val['pro_size'];
+						$product_id = $val['product_id'];
+						$delivery_date = $val['delivery_date'];
+						$card_text = $val['card_text'];
+						$user_instruction = $val['user_instruction'];
+						$gift_items = $val['gift_items'];
+						$product_url = API_PATH.'product_cart/'.$product_id.'';
+						$products = $obj->getCurl($product_url);
+						$product_name = $products->product_name;
+						$regular_price = $products->regular_price;
+						$disscount_price = $products->disscount_price;
+						$medium_path = $products->medium_path;
+						$product_total = $regular_price*$val['quantity'];
+						
+						//Gifts
+						$gift_val = implode(',', $gift_items);
+						$gift_url = API_PATH.'gifts/'.$gift_val.'';
+						$json = $obj->getCurl($gift_url);
+						$json_data = $json->gifts;
+						
+                ?>
+                
+                <div class="well well-lg cartDetail" data-row-id="<?php echo $key; ?>">
+                	<a href="javascript:void(0);" class="close_btn closeBtn"></a>
+                	<aside class="cartImg"><img src="<?php echo IMG_PATH.$medium_path; ?>" alt="" /></aside>
+                    <div class="cartList">
+                    	<h3><?php echo $product_name; ?></h3>
+                    	<div class="Item-name">
+                        	<div class="cartItem">
+                                <div class="sh-cart cartSize">Size: <span><?php echo $pro_size; ?></span></div>
+                                <?php
+									foreach($json_data as $post_gifts){
+										$gift_name = $post_gifts->gift_name;
+										$gift_price = $post_gifts->regular_price;
+										$gift_disccount_price = $post_gifts->disccount_price;
+										$gift_total_price += $gift_price;
+										echo '<div class="sh-cart cartName">Gift Name: <span>'.$gift_name.'</span></div>';
+									}
+                                ?>
+                        	</div>
+                       		<div class="cartItem">
+                                <div class="sh-cart cartSize">Delivery Date: <span> <?php echo $delivery_date; ?></span></div>
+                                <div class="sh-cart cartName">Gift Card Text:<span><?php echo $user_instruction; ?></span></div>
+                        	</div>   
+                        </div>
+                        <div class="Item-name">
+                        	<ul>
+                            	<li>Qty : 
+									<!--onchange='this.form.submit()'-->
+									<select class="pqty" name="product_quantity[]" data-key="<?php echo $key; ?>">
+										<?php
+										for($i=1; $i<=10; $i++){
+											$selected = (($i == $quantity) ? 'selected' : '');
+											echo  '<option '.$selected.' value="'.$i.'">'.$i.'</option>';
+										}
+										?>
+									</select>
+									<div class="wait" style="color:red; display:none;">Please Wait...</div>
+								</li>
+                                <li>Item Price : <strong>£ <?php echo $product_total; ?></strong></li>
+                                <li>Total : <strong>£<?php echo $product_total+$gift_total_price; ?></strong></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="changeFormat">Change</a>
+                        
+                    </div>
+                </div>
+                
+                <?php } }?>
+                
+               </form>
+                <button type="submit" class="btn btn-col btnDirection"  onclick="window.location.href='checkout-detail.php'">Proceed to Billing </button>
+                <a href="cart.php?action=empty" onclick="return confirm('Are you sure remove all items?')" class="btn btn-col2 btnDirectionLeft">Empty Cart</a> 
+            </div>
+        </div>        
+    </div>
+</section>            
+
+<?php include_once 'footer.php'; ?>

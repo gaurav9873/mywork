@@ -1,0 +1,705 @@
+/*
+
+@media only screen and (min-width:1200px){.billingInformation li:nth-child(3n) {margin-right: 0;}}*/
+
+@media only screen and (min-width:1200px) and (max-width:1550px) {
+
+	.bg-body h1::before {width: 30%;}
+
+	.bg-body h1::after {width: 30%;}
+
+	.fixed-header .quote {font-size: 24pt;}
+
+	
+
+	/*.bannerEffect {height: auto;}*/
+
+	.bannerEffect.bannerOffer {padding:15px; width: 230px;}
+
+	.bannerEffect.bannerOffer h2 {font-size: 38px; margin-top: 10px;}
+
+	.bannerEffect.bannerOffer h2 span {font-size: 16px;}
+
+	.bannerEffect.bannerOffer .btn {font-size: 12px; margin-top: 10px; padding:5px 15px;}
+
+	.bannerEffect.bannerOffer img { margin-bottom:15px;}
+
+
+
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+	body {font-size: 11pt;}
+
+	h1, .h1 { font-size: 26pt;}
+
+	h2, .h2 {font-size: 22pt;}
+
+	.fixed-header .quote {font-size: 15pt;}
+
+	.fixed-header .callDetail li {font-size: 11pt;}
+
+	/*.f-categories {  height: 235px;}*/
+
+	.f-categories span { font-size: 17pt;}
+
+	.bg-body h1::before {width:27%;}
+
+	.bg-body h1::after {width:27%;}
+
+	.navbar-nav > li > a {font-size:12pt; line-height: 21pt;}
+
+	footer .footerAdds li { margin: 0 10px;}
+
+	footer h3 { font-size: 15pt;}
+
+	.bridal-cat h3 {font-size: 15pt;}
+
+	.flow-cate a span {font-size: 13pt; margin-top: 10px;}
+
+	.flow-cate {border-radius: 10px; margin: 20px 3% 20px 0; padding: 20px; width: 31%;}
+
+	.price {font-size: 38pt;}
+
+	.bannerscollection_zoominout.opportune .leftNav, .bannerscollection_zoominout.opportune .rightNav{ display:block !important;}
+
+	.billingform .billInformation .form-group .col-sm-3 { margin-left:0 !important; padding-left:0 !important; font-size:13px;}
+
+	/*.billingform .billInformation::after{ background:none;}*/
+
+	.billingform .billInformation .form-group { margin: 5px 1.1% !important; width: 31%;}
+
+	/*.billingform .cardMassages {width: 100%; margin-top:30px;}*/
+
+	.billingInformation {width: 100%;}
+
+	.navbar-nav > li > .dropdown-menu li a { text-align:left;}
+
+	.billInformation.newFormDe .form-group { margin-bottom:20px !important;}
+
+	
+
+	/*.bannerEffect {height: auto;}*/
+
+	.bannerEffect.bannerOffer {padding:15px; width: 230px;}
+
+	.bannerEffect.bannerOffer h2 {font-size: 16px; margin-top: 10px;}
+
+	.bannerEffect.bannerOffer h2 span {font-size: 16px;}
+
+	.bannerEffect.bannerOffer .btn {font-size: 12px; margin-top: 10px; padding:5px 15px;}
+
+	.bannerEffect.bannerOffer img { margin-bottom:15px;}
+
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+	body {font-size: 11pt;}
+
+	h2, .h2 {font-size: 22pt;}
+
+	footer h3 {font-size: 12pt;}
+
+	footer .footerNav h3 {margin: 0 0 16px;}
+
+	footer .footerAdds li {margin: 0 3%; width: 26%;}
+
+	footer .footerAdds li img, .facebook img {width: 100%; padding-right:5%;}
+
+	.bridal-cat h3 {font-size: 11pt; margin: 6px 0;}
+
+	.bridal-cat {border-radius: 5px; padding: 13px;}
+
+	.bridal-cat a span {font-size: 14px;}
+
+	.cartDetail .cartList .Item-name .cartItem { width: 100%; float: left; margin: 10px 0 0; padding: 10px 0 0;}
+
+	.cartDetail .cartList .Item-name .cartItem:nth-child(2n+1) {margin-right: 0;}
+
+	.cartDetail .cartList .Item-name .cartItem:nth-child(2n+2) {margin-left: 0;}
+
+	.cartDetail .cartList .Item-name li {margin: 10px 0;}
+
+	.cartDetail .cartList .Item-name select {margin-left: 0;}
+
+	.checkoutSummary figure {height: 210px; width: 31%;}
+
+	.checkoutDetail { padding: 20px; width: 67%;}
+
+	.reviewDetail .flowerRevDetail aside {width: 31%;}
+
+	.reviewDetail .flowerRevDetail section {width: 100%;}
+
+	.flow-cate a span {font-size: 13pt; margin-top: 10px;}
+
+	.flow-cate {border-radius:5px; margin: 20px 3% 20px 0; padding: 15px; width: 31%;}
+
+	.navbar-nav > li > a {font-size: 11pt;padding: 13px 5px;}
+
+	.f-categories {height: 170px;}
+
+	.f-categories span {font-size:16pt;}
+
+	.bg-body h1::before, .bg-body h1::after {width: 0;}
+
+	.fixed-header .quote {font-size: 18px;margin-top: 22px;}
+
+	.feedbackLists {margin: 50px 20px; width: 650px;}
+
+	.formStructure .form-group {width: 31.3%;}
+
+	.ac-detail {font-size: 11pt; padding: 7px 20px;}
+
+	.productDetail {float: left; width: 100%;}
+
+	.demo .lslide img {width: 100%;}
+
+	.price {font-size:35pt;}
+
+	.cartDetail .cartList {width: 100%;}
+
+	.cartDetail .cartList .Item-name li {margin: 0;}
+
+	.checkoutDetail {padding:10px; width: 74%;}
+
+	.checkoutSummary figure {height:auto; width: 25%;}
+
+	.bannerscollection_zoominout.opportune .leftNav, .bannerscollection_zoominout.opportune .rightNav{ display:block !important;}
+
+	.billingform .billInformation{ width:100%; padding-right:0px;}
+
+	.billingform .billInformation::after{ background:none;}
+
+	.billingform .billInformation .form-group { margin: 0 1.1% !important; width: 31%;}
+
+	.billingform .cardMassages {width: 100%; margin-top:30px;}
+
+	.billingInformation {width: 100%;}
+
+	.registerationForm {margin-right: 0; padding: 0 0 20px; width: 100%;}
+
+	.registerationForm::after {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+
+	.registerationForm .form-group {margin: 10px 1% 0;}
+
+	.loginDetail {padding-left: 0; width: 100%;}
+
+	.navbar-nav > li > .dropdown-menu li a { text-align:left;}
+
+	.cartTable table td { padding:2px !important;}
+
+	.cartTable table td select {padding: 5px 0 !important;}
+
+/*	.ppCode button {top: 28px !important; right: -3px !important;}*/
+
+	.billingform .billInformation.formDe .form-group {width: 47% !important;margin-bottom: 20px !important;}
+
+	.form-control, #crafty_postcode_lookup_result_option1 { width:100% !important;}
+
+	.billInformation.newFormDe .form-group { margin-bottom:20px !important;}
+
+	
+
+	/*.bannerEffect {height: auto;}*/
+
+	.bannerEffect.bannerOffer {padding:15px; width: 230px;}
+
+	.bannerEffect.bannerOffer h2 {font-size: 16px; margin-top: 10px;}
+
+	.bannerEffect.bannerOffer h2 span {font-size: 16px;}
+
+	.bannerEffect.bannerOffer .btn {font-size: 12px; margin-top: 10px; padding:5px 15px;}
+
+	.bannerEffect.bannerOffer img { margin-bottom:15px;}
+
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+	body {font-size: 11pt;}
+
+	h1, .h1 {font-size: 21pt;}
+
+	h2, .h2 {font-size: 17pt;}
+
+	h4 {font-size: 12pt;}
+
+	.right-side h2 {margin-top: 10px;}
+
+	.topHeader + .row {margin-top:48px;}
+
+	.topHeader .col-lg-5 {display: none;}
+
+	.fixed-header .col-lg-5.col-md-4 {display: none;}
+
+	.Login ul {float: left;}
+
+	.navi {display: none;}	
+
+	.navi > ul {background: #232323 none repeat scroll 0 0; position: absolute; top: 45px; z-index: 999;}
+
+	.nav > li {border-bottom: 1px solid #444; float: left; width: 100%;}
+
+	.nav > li > a {color: #fff !important; font-size:13px;  padding:3px 15px; position: relative;  text-align: left;}
+
+	.collapse.in { border:0px;}
+
+	.bg-body h1::before, .bg-body h1::after {width: 0;}
+
+	footer .footerNav {min-height: auto;}
+
+	.callDetail li:nth-child(1), .callDetail li:nth-child(2) {display: none;}
+
+	.navbar-inverse .navbar-toggle .icon-bar {background-color: #fff;}
+
+	.navbar-inverse .navbar-toggle {border-color: #fff;}
+
+	.navbar-inverse {background-color: transparent; border-color: transparent; position: fixed; right: 0; top:0px; margin-bottom:0px; z-index: 99999;}
+
+	.navi > ul {left: 0; position: fixed; width: 100%; z-index: 999;}
+
+	.nav li:hover {background: #78970c none repeat scroll 0 0;}
+
+	.f-categories {margin-bottom: 20px;}
+
+	header {background: #fff none repeat scroll 0 0; box-shadow: 2px 2px 3px #757575; position: fixed; top: 0; width: 100%; z-index: 9999;}
+
+	.fixed-header {padding: 0;}
+
+	.headerSection + div + section {margin-top:10px;}
+
+	.logo {height:50px; float:left; margin: 8px 0 4px;}
+
+	.fixed-header .callDetail { margin-top:6px;}
+
+	.Login li:not(:nth-child(1)) a {height: 32px; line-height: 32px; padding: 0;text-align: center; width: 42px;}
+
+	.bannerEffect { display:none;}
+
+	.logo .img-responsive {height: 100%;}
+
+	.flow-cate {border-radius:5px; margin: 20px 2% 20px 0; padding: 15px; transition: all 0.5s ease 0s; width: 32%;}
+
+	.flow-cate a span {font-size: 11pt;}
+
+	.feedbackLists {float:left; margin:50px 2%; width: 96%;}
+
+	.feedback h4 {font-size: 18pt; margin-bottom: 20px;}
+
+	.f-categories span {font-size:16pt;}
+
+	.banner {margin: 0 0 15px;}
+
+	.bot-msg {font-size: 12pt;}
+
+	.aboutSec {display: inline-block;}
+
+	.aboutSec .aboutContent, .aboutSec .aboutImg {width: 100%;}
+
+	.aboutSec:nth-child(2n+1) aside {margin-left: 0;}
+
+	.contDetail span {width: calc(100% - 30px) !important;}
+
+	.fixed-header .callDetail li a {float: left; padding: 13px 0;}
+
+	.searchField .form-group {width: 100%;}	
+
+	.Login a {font-size: 13px; padding: 7px 13px;}
+
+	.navbar-toggle {background:#383838 none repeat scroll 0 0; border: 1px solid #a9a9a9 !important; border-radius:2px; float: right; margin-bottom:0px; margin-top:4px; padding:8px;}
+
+	.Login li:not(:nth-child(1)) a {background: #383838 none repeat scroll 0 0; border: 1px solid #a9a9a9; border-radius: 2px;}
+
+	.searchField .input-group-addon a {background: #eeeeee none repeat scroll 0 0 !important; border: 0 none !important; color: #545454;}
+
+ 	.BannerBox {height: 250px;}
+
+	.bannerEffect {height: auto; padding: 10px; min-height: 300px;}
+
+	.banner .bannerControls, .banner .mycanvas {display: none;}
+
+	.bridal-cat img {width: 100%;}	
+
+	.ac-detail {font-size: 11pt; padding: 7px 20px;}
+
+	.lg-form::after {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+
+	.lg-form {padding-left: 0;}
+
+	.sec-login {margin: 10px 0;}	
+
+	.reviewDetail .flowerRevDetail aside {float: left; height:auto;}
+
+	.Login li:first-child, .Login li:first-child a {margin-left: 0; padding-left: 0;}
+
+	.productDetail {float: left; width: 100%;}
+
+	.demo .lslide img {width: 100%;}
+
+	.price {font-size:30pt;} 
+
+	.Item-Select, .cartDetail .cartList .Item-name select, .flowerQyt select {margin-left: 5px !important;}
+
+	.demo .item {margin-bottom: 30px !important;}
+
+	.cartDetail .cartList {width: 100%;}
+
+	.cartDetail .cartList .Item-name li {margin: 0;}
+
+	.billingform .billInformation {padding-right: 0; width: 100%;}
+
+	.billingform .billInformation::after {background: transparent none repeat scroll 0 0;}
+
+	.billingform .cardMassages {padding-left: 0; width: 100%;}
+
+	.checkoutDetail {padding:10px; width: 100%;}
+
+	.checkoutSummary figure {margin-bottom: 20px; width: 20%; height:auto;}
+
+	ul.tabs-ac li{padding:10px !important;}
+
+	.billingform .billInformation{ width:95%; padding-right:0px;}
+
+	.billingform .billInformation::after{ background:none;}
+
+	.billingform .billInformation .form-group { margin: 0 1.1% !important; width: 31%;}
+
+	.billingform .cardMassages {width: 100%; margin-top:30px;}
+
+	.billingInformation {width: 100%;}
+
+	.responsive-tabs__heading {float: left;width: 100%;}
+
+	.cardImg{ display:none;}
+
+	.newFS { font-size:11px !important; line-height:20px !important}
+
+	/*.responsPnone { margin-top:125px;}*/
+
+	.responsPnone { margin-top:0;}
+
+	.img-full-width { height:auto;}
+
+	.productDetail h2 { margin-bottom:10px;}
+
+	.billingform .cardMassages.frmdee {
+
+    margin: 0;
+
+    padding-right: 18px;
+
+    width: 94%;
+
+}
+
+	.billingform .cardMassages.frmdee .form-group { margin-bottom:15px !important;}
+
+	.Login li:nth-child(2) i { margin-top:8px;}
+
+	.navbar-nav > li > .dropdown-menu {
+
+    background:#444;
+
+    border: medium none;
+
+    box-shadow: none;
+
+    font-size: 13px;
+
+    width: 100% !important;
+
+    position: relative;
+
+    right: 0;}
+
+	.navbar-nav > li > .dropdown-menu a { color:#fff;}
+
+	.navbar-nav > li > .dropdown-menu li a { text-align:left !important;}
+
+	.navbar-nav > li > .dropdown-menu li { border:1px solid #777;}
+
+	.navbar-nav > li > .dropdown-menu > li:hover a { background:#51660b !important;}
+
+	.navi > ul { max-height:350px; overflow:auto;}
+
+	.navbar-nav > li .arrowso {display: block;
+
+    height: 28px;
+
+    position: absolute;
+
+    right: 10px;
+
+    top: 0;
+
+    width: 30px; }
+
+	
+
+}
+
+@media only screen and (min-width:580px) and (max-width:767px) {
+
+	footer .facebook, footer .poweredBy {min-height: 150px; padding: 15px 20px; text-align: left; width: 50%;}
+
+	footer .col-lg-3.col-md-3.col-sm-3 {float: left; min-height: 270px; width: 50%;}
+
+	footer .footerAdds {border-bottom: 1px solid #bfbfc1;}
+
+	/*
+
+	.cartDetail .cartImg {width:25%;}
+
+	.cartDetail .cartList {width: 73%;}*/
+
+	.formStructure .form-group {width: 31.3%;}
+
+	.billDetail .sec-1 {width: 35%;}
+
+	.billDetail .sec-2 {width: 53%;}
+
+	.registerationForm {margin-right: 0; padding: 0 0 20px; width: 100%;}
+
+	.registerationForm::after {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+
+	.registerationForm .form-group {margin: 10px 1% 0;}
+
+	.loginDetail {padding-left: 0; width: 100%;}
+
+}
+
+@media only screen and (min-width:320px) and (max-width:579px) {
+
+	h5 {font-size: 13pt;}
+
+ 	footer .facebook, footer .poweredBy {padding: 15px 20px; text-align: left; width: 100%;min-height: auto;}
+
+	footer .footerAdds li {margin: 0 2%; text-align: left; width:28%; float: left;}
+
+	.flow-cate {border-radius: 5px; margin:10px 0 10px 0;  width: 100%;}
+
+	.aboutSec .aboutContent ul { -moz-column-count: 1; -webkit-column-count: 1; column-count: 1}
+
+	.fixed-header div {padding-left: 0; padding-right: 0;}
+
+	footer .footerNav h3 {margin-bottom: 9px;}
+
+	footer h3 {font-size: 14pt;}
+
+	footer .footerNav {padding: 10px 0 10px 10px;}
+
+	footer .footerAdds {border-bottom: 1px solid #bfbfc1; float: left; padding: 0 0 20px; width:100%;}
+
+	footer .footerNav a {font-size: 11pt;}
+
+	.formStructure .form-group {width: 100%;}
+
+	.lg-form .form-group {width: 100%;}
+
+	.lg-form .pwdSec {margin-left: 0;}
+
+	.reviewDetail .flowerRevDetail section {float:left; width: 100%;}
+
+	.reviewDetail .flowerRevDetail aside { width:100%;}
+
+	.reviewDetail .flowerRevDetail aside img{ width:100%;}
+
+	.billDetail .sec-1 {width:100%;}
+
+	.billDetail .sec-2 {width:100%;}
+
+	.reviewDetail .flowerRevDetail {margin-bottom: 10px;}
+
+	.reviewDetail .flowerRevDetail li {width: 100%;}
+
+	.reviewDetail .flowerRevDetail li:nth-child(2n+1) {padding-right: 0;}
+
+	.reviewDetail .flowerRevDetail li:nth-child(2n+2) {padding-left: 0;}
+
+	.reviewDetail {margin-bottom: 20px; padding: 10px 10px 0;}
+
+	.tab-label {font-size: 11pt !important; padding: 8px 10px !important;}
+
+	.tab-content {padding: 10px 0 !important;}
+
+	.shareLinks, .flowerQyt{width:50%;}
+
+	.price{ width:100%;}
+
+	.price {font-size: 18pt;font-weight: 600;}
+
+	.flowerQyt, .shareLinks { margin:10px 0;}
+
+	.addNum { width:100%; float:left;margin-top:10px; padding:0 !important;}
+
+	.flowerSize { margin-bottom:20px;}
+
+	.item.giftProd p.gftLine {font-size: 17px !important;}
+
+	del {font-size: 14pt;}
+
+	.price samp {font-size: 10pt;}
+
+	.well-lg {padding: 10px;}
+
+	.cartDetail .cartList .Item-name li span {float: right; text-align: right; width: 65%;}
+
+	.checkoutDetail .productAndGift {font-size: 11pt; width: 100%;}
+
+	.rgularColour {font-size: 11pt;}
+
+	.checkoutDetail .productAndGift:nth-child(2n+2) {padding-left: 0;}
+
+	.billingform .billInformation .form-group {margin-right: 0; width: 100%;}
+
+	.totalAmnt {padding: 5px 10px;}
+
+	.checkoutSummary figure {width: 100%;}
+
+	.requiredText {top: 5px;}
+
+	.billingform .cardMassages .form-group {margin-right: 0; width: 100%;}
+
+	.billingInformation li {margin: 7px 0; width: 100% !important;}
+
+	.registerationForm {margin-right: 0; padding: 0 0 20px; width: 100%;}
+
+	.registerationForm::after {background: rgba(0, 0, 0, 0) none repeat scroll 0 0;}
+
+	.registerationForm .form-group {margin: 10px 0 0; width:100%;}
+
+	.loginDetail {padding-left: 0; width: 100%;}
+
+	.addgft { font-size:16px; margin-top:20px;}
+
+	.billingInformaion { padding:10px;}
+
+	.billingInformaion .billInformation.newFormDe .form-group { margin:0 0 15px !important;}
+
+	.billingInformaion .billInformation.newFormDe .form-group .col-sm-3, 
+
+	.billingform .cardMassages.formDee .form-group .col-sm-3, 
+
+	.billingform .cardMassages.formDee .form-group .col-sm-9 { margin:0 0 15px !important; padding:0;}
+
+	
+
+	.billingInformaion .billInformation.newFormDe .form-group label.col-sm-3, .billingform .cardMassages.formDee .form-group label.col-sm-3 { margin:0 0 5px !important}
+
+	.billingInformaion .billInformation.newFormDe .form-group .col-sm-6 { margin:0 0 0 !important; padding:0;}
+
+	.billingInformaion .billInformation.newFormDe .form-group .col-sm-9 { margin:0 0 0 !important; padding:0;}
+
+	.billingform .cardMassages.formDee .form-group { margin:0;}
+
+	
+
+	.billingInformaion table.ftSize tr td { width:100%; float:left; text-align: left;}
+
+	.reviewDetail .flowerRevDetail li {padding: 10px 0px !important; font-size:12px; font-weight:100;}
+
+	
+
+	.tableDesign table tr th, .tableDesign table tr td { padding:5px !important; font-size:12px; font-weight:100;}
+
+	.TotalPrice #coupon { width:100%; height:30px; margin-top:5px;}
+
+}
+
+.feedback { position:relative;}
+
+.feedback.bg:after { position:absolute; width:57%; right:0; top:0; bottom:0; content:""; background:rgba(0,0,0,0.3)}
+
+@media only screen and (max-width:1600px) {
+
+	.feedback { position:relative;}
+
+	.feedback.bg:after { position:absolute; width:100%; top:0; bottom:0; content:""; background:rgba(0,0,0,0.3)}
+
+	.feedbackLists {
+
+    margin: 7% 25%;
+
+    width: 50%; position:relative; z-index:55;}
+
+}
+
+
+
+@media only screen and (max-width:1200px) {
+
+	.feedbackLists {
+
+    margin: 7% 10%;
+
+    width: 80%;}	
+
+}
+
+@media only screen and (max-width:767px) {
+
+	.feedback { position:relative;}
+
+	.feedback.bg:after { position:absolute; width:100%; top:0; bottom:0; content:""; background:rgba(0,0,0,0.3) !important; left:0;}
+
+	.feedbackLists {
+
+    margin: 7% 10%;
+
+    width: 80%; position:relative; z-index:55;}	
+
+}
+
+@media only screen and (max-width:1200px) {
+
+.BannerBox img.wide {
+
+    height: auto !important;
+
+    max-height: 100%;
+
+    max-width: 100%;
+
+    width: 100%;
+
+}
+
+.BannerBox { height:auto;}
+
+}
+
+@media only screen and (max-width:1400px) {
+
+.feedback { background-size:100% 100% !important;
+
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+
+.feedback {
+
+    height: 240px;
+
+    width: 100%;
+
+}
+
+}
+
+@media only screen and (max-width:500px) {
+
+	.feedback { height:140px;}
+
+}

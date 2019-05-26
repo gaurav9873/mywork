@@ -1,0 +1,175 @@
+<?php
+include_once 'header.php';
+?>
+
+<script src="http://luke.sno.wden.co.uk/assets/js/jquery-ui.js"></script>
+	<script src="http://luke.sno.wden.co.uk/assets/js/sortable.js"></script>
+
+<script>
+/*$(document).ready(function(){
+	$("#example5").sortable({
+    connectWith: "#example5 ul",
+    items: "li",
+    placeholder: "ui-state-highlight",
+    /*update : function(event, ui) {
+       var order = $(this).sortable('toArray').toString();
+       var serial = $(this).sortable('serialize');
+       console.log(order);
+       console.log(serial);
+
+    }*/
+    
+  /*  update : function(event, ui){
+				var arr = $(this).sortable('toArray');
+				var i, n;
+				var attrs = [];
+				for (i = 0, n = arr.length; i < n; i++) {
+				attrs.push($('#' + arr[i]).data('myattr'));
+				}
+				var serial = $(this).sortable('serialize');
+				console.log(serial);
+				console.log(attrs);
+	}
+    
+ });
+});*/
+
+
+$(document).ready( function(){
+	var sortable = $('.menu').sortableMenu();
+	$('#get-data').click( function(e){
+	e.preventDefault();
+	console.log( sortable.data('serialize') );
+	$('#sd').html( '<div>' + sortable.data('serialize') + '</div>' );
+	});
+
+});
+
+</script>
+
+<style>
+	
+.ui-state-highlight{
+	background: #e74c3c;
+}
+.menu {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px dashed #26a65b;
+    padding: 20px;
+    background: #fadcd1;
+    margin: 0
+}
+.menu li {
+    position: relative;
+    margin: 0 0 2px 0;
+    list-style: none;
+    overflow: hidden;
+    display: block;
+    color: white
+}
+.menu li.ghost span {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    background: #e74c3c
+}
+.menu li>span {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    background: #eb7347;
+    padding: 7px 15px;
+    float: left;
+    cursor: move
+}
+.menu li>span:hover {
+    background: #e65019
+}
+#get-data {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #eb7347;
+    color: white;
+    display: inline-block
+}
+#sd>div {
+    background: black;
+    color: white;
+    padding: 20px;
+    margin: 20px 0
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	$("#add").on('click', function(){
+		$(".list-groups").append('<li id="10" class="list-group-item menlink">Flower</li>');
+	});
+	
+	
+});
+</script>
+
+<div class="row">
+
+<a href="javascript:void(0);" id="save">Save Menu</a>
+<a href="javascript:void(0);" id="add">Add Menu</a>
+<ul>
+<li><span><i class="fa fa-chevron-circle-right"></i></span>Flower</li>
+<li><span><i class="fa fa-chevron-circle-right"></i></span>Cake</li>
+<li><span><i class="fa fa-chevron-circle-right"></i></span>Rose</li>
+</ul>
+
+<!--<form method="post">
+	<div id="example5">            
+	  <ul class="list-group ui-sortable">
+		  <li data-myattr="1" id="1" class="list-group-item menlink">11111</li>
+		  <li data-myattr="2" id="2" class="list-group-item menlink">22222</li>
+		  <li data-myattr="3" id="3" class="list-group-item menlink">33333</li>
+		  <li data-myattr="4" id="4" class="list-group-item menlink">44444
+			<ul class="list-group">
+			  <li style="visibility:hidden;"></li>
+			  <li data-myattr="6" id="6" class="list-group-item menlink">66666</li>
+			  <li data-myattr="7" id="7" class="list-group-item menlink">77777</li>
+			  <li data-myattr="8" id="8" class="list-group-item menlink">88888</li>
+			  <li data-myattr="9" id="9" class="list-group-item menlink">99999</li>
+			</ul>
+		  </li>
+		  <li data-myattr="5" id="5" class="list-group-item menlink">55555
+			<ul class="list-group">
+			  <li style="visibility:hidden;"></li>
+			  <li data-myattr="10" id="10" class="list-group-item menlink">100 1000</li>
+			  <li data-myattr="11" id="11" class="list-group-item menlink">11 11 11</li>
+			  <li data-myattr="12" id="12" class="list-group-item menlink">12 12 12</li>
+			  <li data-myattr="13" id="13" class="list-group-item menlink">13 13 13</li>
+			</ul>
+		  
+		  </li>
+		</ul>  
+	</div>
+</form>
+<a href="#" id="get-data">Serialize Data</a>
+<div id="sd"></div>-->
+<ul class="menu cf ui-sortable">
+		<li data-parameters="[1,0,0]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 1</span></li>
+		<li data-parameters="[2,0,0]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 2</span></li>
+		<li data-parameters="[3,2,1]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 3</span></li>
+		<li data-parameters="[4,2,1]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 4</span></li>
+		<li data-parameters="[5,2,1]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 5</span></li>
+		<li data-parameters="[6,5,2]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 6</span></li>
+		<li data-parameters="[7,5,2]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 7</span></li>
+		<li data-parameters="[8,0,0]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 8</span></li>
+		<li data-parameters="[9,0,0]"><span><i class="fa fa-chevron-circle-right"></i> Test Link 9</span></li>
+	</ul>
+<a href="#" id="get-data">Serialize Data</a>
+<div id="sd"></div>
+
+</div>
+
+
+
+<?php include_once 'footer.php'; ?>

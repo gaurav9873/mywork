@@ -1,0 +1,259 @@
+<?php 
+include_once 'header.php'; 
+
+$root_url = SITE_URL;
+if(empty($_SESSION["cart_products"])){
+	header("location:$root_url");
+}
+
+if(!empty($_GET["action"])) {
+	$action = $_GET['action'];
+	switch($action){
+		case "empty":
+			unset($_SESSION["cart_products"]);
+			header("location:$root_url");
+		break;
+	}
+}
+?>
+
+<script>
+$(document).ready(function(){
+	$(".closeBtn").on('click', function(){
+		var data_key = $(this).closest(".cartDetail").attr('data-row-id');
+		var checkstr =  confirm('are you sure you want to remove this?');
+		if(checkstr == true){
+			if(data_key!=''){
+				$.ajax({
+					url:'action/cart.php',
+					type:'post',
+					data:{action:'remove_item', item_id:data_key},
+					cache:false,
+					beforeSend:function(){},
+					complete:function(){},
+					success:function(responce){
+						window.location.href='';
+						/*$('.cartDetail').filter("[data-row-id='" + data_key + "']").slideUp(500, function(){ 
+							$(this).remove();
+						});*/
+					}
+				});
+				
+			}
+		}
+	});
+	
+	
+	$(".product_size").on('change', function(){
+		var val = $(this).val();
+		var size_key = $(this).closest(".cartDetail").attr('data-row-id');
+		
+		var wait = $(this).next(".wait_msg");
+		if(val!=''){
+			$.ajax({
+				url:'action/cart.php',
+				type:'post',
+				data:{action:'change_size',size_type:val, pkey:size_key},
+				beforeSend:function(){
+					$(wait).show();
+				},
+				complete:function(){
+				},
+				success:function(resp){
+					window.location.href='';
+				}
+			});
+		}
+		
+	});
+	
+	$(".product_quantity").on('change', function(){
+		var qty = $(this).val();
+		var qty_key = $(this).closest(".cartDetail").attr('data-row-id');
+		var qty_wait = $(this).parents(".Item-name").find(".qtywait");
+
+		if(qty!=''){
+			$.ajax({
+				url:'action/cart.php',
+				type:'post',
+				data:{action:'update_qty', cart_key:qty_key, quantity:qty},
+				cache:false,
+				beforeSend:function(){
+					$(qty_wait).show();
+				},
+				complete:function(){
+				},
+				success:function(resp){
+					window.location.href='';
+				}
+			});
+		}
+		
+	});
+	
+	$(".del").on('click', function(){
+		var gift_key = $(this).attr( "data-id" );
+		var data_gift_key = $(this).closest(".gift-name").attr('data-gift-key');
+		//alert(gift_key+"="+data_gift_key);
+		$(this).closest(".gift-name").addClass('remove-div');
+		var removeDiv = $(".remove-div");
+		if(data_gift_key!=''){
+			$.ajax({
+				url:'action/cart.php',
+				type:'post',
+				data:{action:'remove_gift',pkey:gift_key,gkey:data_gift_key},
+				cache:false,
+				beforeSend:function(){
+				},
+				complete:function(){
+				},
+				success:function(req){
+					window.location.href='';
+				}
+			});
+		}
+	});
+
+
+	$(".gift_quantity").on('change', function(){
+		var gift_val = $(this).val();
+		var sid = $(this).closest(".cartDetail").attr('data-row-id');
+		var giftKey = $(this).closest(".gift-name").attr('data-gift-key');
+
+		if(gift_val!=''){
+			$.ajax({
+				url:'action/cart.php',
+				type:'post',
+				data:{action:'update_giftqty', giftID:gift_val, giftKey:giftKey, sid:sid},
+				beforeSend:function(){
+				},
+				complete:function(){
+				},
+				success:function(respone_data){
+					window.location.href='';
+				}
+			});
+		}
+	})
+
+});
+</script>
+
+<section>
+	<div class="container-fluid">
+    	<div class="row">
+    		<div class="col-lg-12">
+                <h2>Your Shopping Cart</h2> 
+                <div class="cardImg"><img src="images/paymoney.png" alt="" /></div> 
+                <h3 class="heading3">Cart Items</h3>                
+                
+                <?php
+					if(!empty($_SESSION['cart_products'])){
+						$product_arr = array();
+						$gift_arr = array();
+						foreach($_SESSION['cart_products'] as $key=>$val){
+							$quantity = $val['quantity'];
+							$pro_size = $val['pro_size'];
+							$product_id = $val['product_id'];
+							$delivery_date = $val['delivery_date'];
+							$card_text = $val['card_text'];
+							$user_instruction = $val['user_instruction'];
+							$selected_size = (($pro_size == 'Standard') ? "selected" : (($pro_size == 'Large') ? "selected" : ''));
+							$product_url = API_PATH.'product_cart/'.$product_id.'';
+							$products = $obj->getCurl($product_url);
+							$pid = $products->pid;
+							$product_name = $products->product_name;
+							$standard_price = $products->regular_price;
+							$large_price = $products->large_price;
+							$medium_path = $products->medium_path;
+							$thumbnail_path = $products->thumbnail_path;
+							$product_price = (($pro_size == 'Standard') ? $standard_price : $large_price);
+							$product_total = $product_price*$val['quantity'];
+							array_push($product_arr, $product_total);
+							
+							//Gift api
+							$gift_items = implode(",", array_keys($val['gift_items']));
+							$gift_url = API_PATH.'gifts/'.$gift_items.'';
+							$json = $obj->getCurl($gift_url);
+							$json_data = isset($json->gifts) ? $json->gifts : '';
+						
+                ?>
+                <div class="well well-lg cartDetail" data-row-id="<?php echo $key; ?>">
+                	               	
+                    <div class="cartList">
+                    	<h3>Product</h3>                    	
+                        <div class="Item-name">
+                        	<ul>
+                            	<li>Product : <span><img height="80" width="80" src="<?php echo IMG_PATH.$thumbnail_path; ?>" alt="" /></span></li>
+                            	<li>Product Name : <span><strong><?php echo $product_name; ?></strong></span></li>                                
+                                <li>Qty : <span>
+											<select name="product_quantity" id="product_quantity" class="product_quantity">
+												<?php echo $obj->product_quantity($quantity); ?>
+											</select> X £<?php echo $product_price; ?> = <strong>£<?php echo $product_total; ?></strong> 
+											<ul class="qtywait" style="display:none; color:red;"><li>Please wait..</li></ul>
+											</span>
+												
+								</li>
+											
+                                <li>Size : <span>
+											  <select style="width:107px" class="product_size" name="product_size" id="product_size">
+												  <option <?php echo (($pro_size == 'Standard') ? 'selected' : ''); ?> value="Standard">Standard</option>
+												  <option <?php echo (($pro_size == 'Large') ? 'selected' : ''); ?>  value="Large">Large</option>
+											  </select>
+											  <ul class="wait_msg" style="display:none; color:red;"><li>Please wait..</li></ul>
+											</span></li>                            	
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cartList">
+                    	<h3>Gift <samp>(if any)</samp></h3>                    	
+                        
+                       <?php
+								if(!empty($json_data)){
+									foreach($json_data as $k=>$post_gifts){
+										$gift_id = $post_gifts->id;
+										$gift_name = $post_gifts->gift_name;
+										$gift_price = $post_gifts->regular_price;
+										$disccount_price = $post_gifts->disccount_price;
+										$qty = $val['gift_items'][$gift_id];
+										$giftTotal = $qty*$gift_price;
+										array_push($gift_arr, $giftTotal);
+                        	?>
+                        <div class="Item-name gift-name" data-gift-key="<?php echo $gift_id; ?>">
+
+                        	<ul class="gifts">
+                            	<li>Product Name : <span><strong><?php echo $gift_name; ?></strong></span></li>                                
+                                <li>Qty : <span>
+											<select name="gift_quantity" id="gift_quantity" class="gift_quantity">
+												<?php echo $obj->product_quantity($qty); ?>
+											</select> X £<?php echo $gift_price; ?> = <strong>£<?php echo $giftTotal; ?></strong> </span></li>
+                                <li><a href="javascript:void(0);" class="btn btn-col btnDirection del" data-id="<?php echo $key; ?>">Delete</a></li>     
+                            </ul>
+                            
+                            
+                        </div>  
+                           <?php }  } ?>
+                                                                
+                    </div>
+                    <div class="allDetail">
+                     <a href="javascript:void(0);" class="close_btn closeBtn"></a> 
+                    </div>
+                </div>
+                
+                <?php } ?>
+                 
+                <div class="billDetail">                      
+                  Total Amount <strong>£ <?php $ptotal = array_sum($product_arr); 
+											   $gtotal = array_sum($gift_arr);  
+											   echo $grand_total = $ptotal+$gtotal;
+                  }?></strong>                       
+                </div>
+                
+                <button type="submit" class="btn btn-col btnDirection" onclick="window.location.href='checkout-detail.php'">Proceed to Billing </button>
+                <!--<button type="submit" class="btn btn-col2 btnDirectionLeft">Empty Cart</button> -->
+                <a href="cart.php?action=empty" onclick="return confirm('Are you sure remove all items?')" class="btn btn-col2 btnDirectionLeft">Empty Cart</a>
+            </div>
+        </div>        
+    </div>
+</section>
+<?php include_once 'footer.php'; ?>

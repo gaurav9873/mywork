@@ -1,0 +1,61 @@
+
+@media only screen and (min-width:1200px){.billingInformation li:nth-child(3n) {margin-right: 0;}}
+@media only screen and (min-width:1200px) and (max-width:1550px) {
+	.bg-body h1::before {width: 30%;}
+	.bg-body h1::after {width: 30%;}
+	.fixed-header .quote {font-size: 24pt;}
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	body {font-size: 11pt;}
+	h1, .h1 { font-size: 26pt;}
+	h2, .h2 {font-size: 22pt;}
+	.fixed-header .quote {font-size: 16pt;}
+	.fixed-header .callDetail li {font-size: 11pt;}
+	/*.f-categories {  height: 235px;}*/
+	.f-categories span { font-size: 17pt;}
+	.bg-body h1::before {width:27%;}
+	.bg-body h1::after {width:27%;}
+	.navbar-nav > li > a {font-size:12pt; line-height: 21pt;}
+	footer .footerAdds li { margin: 0 10px;}
+	footer h3 { font-size: 15pt;}
+	.bridal-cat h3 {font-size: 15pt;}
+	.flow-cate a span {font-size: 13pt; margin-top: 10px;}
+	.flow-cate {border-radius: 10px; margin: 20px 3% 20px 0; padding: 20px; width: 31%;}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+	body {font-size: 11pt;}
+	h2, .h2 {font-size: 22pt;}
+	footer h3 {font-size: 12pt;}
+	footer .footerNav h3 {margin: 0 0 16px;}
+	footer .footerAdds li {margin: 0 3%; width: 26%;}
+	footer .footerAdds li img, .facebook img {width: 100%; padding-right:5%;}
+	.bridal-cat h3 {font-size: 11pt; margin: 6px 0;}
+	.bridal-cat {border-radius: 5px; padding: 13px;}
+	.bridal-cat a span {font-size: 14px;}
+	.cartDetail .cartList .Item-name .cartItem { width: 100%; float: left; margin: 10px 0 0; padding: 10px 0 0;}
+	.cartDetail .cartList .Item-name .cartItem:nth-child(2n+1) {margin-right: 0;}
+	.cartDetail .cartList .Item-name .cartItem:nth-child(2n+2) {margin-left: 0;}
+	.cartDetail .cartList .Item-name li {margin: 10px 0;}
+	.cartDetail .cartList .Item-name select {margin-left: 0;}
+	.checkoutSummary figure {height: 210px; width: 31%;}
+	.checkoutDetail { padding: 20px; width: 67%;}
+	.billingInformation li:nth-child(2n) {margin-right: 0;}
+	.billingInformation li {width: 48%;}
+	.reviewDetail .flowerRevDetail aside {width: 31%;}
+	.reviewDetail .flowerRevDetail section {width: 67%;}
+	.flow-cate a span {font-size: 13pt; margin-top: 10px;}
+	.flow-cate {border-radius:5px; margin: 20px 3% 20px 0; padding: 15px; width: 31%;}
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+
+}
+
+@media only screen and (min-width:320px) and (max-width:1199px) {
+
+
+}

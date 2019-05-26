@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+### WWW & HTTPS
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/(.*) http://%{SERVER_NAME}/$1 [R]
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]

@@ -1,0 +1,80 @@
+body {
+	width: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+p {
+	margin: 0;
+	padding: 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+table {
+	border-left:none;
+	border-right:none;
+	border-top: none;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-family:Arial, Helvetica, sans-serif;
+}
+table {
+	padding: 2mm 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+table.borderBx { border:1px solid #ccc; text-align:left; font-weight:100;}
+table.borderBx p { margin:0; padding:0; line-height:22px; font-size:12px; font-weight:100;}
+table.borderBx h1 { margin:0 0 10px;}
+
+
+table.heading {
+	height: 50mm;
+}
+h1.heading {
+	font-size: 14pt;
+	color: #000;
+	font-weight: normal;
+}
+h2.heading {
+	font-size: 10pt;
+	color: #000;
+	font-weight: bold;
+}
+hr {
+	color: #ccc;
+	background: #ccc;
+}
+/*#invoice_body {
+	height: 68mm;
+}*/
+#invoice_body, #invoice_total {
+	width: 100%;
+}
+#invoice_body table, #invoice_total table {
+	width: 100%;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-top: 5mm;
+}
+#invoice_body table td, #invoice_total table td {
+	text-align: center;
+	font-size: 9pt;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 2mm 0;
+}
+#invoice_body table td.mono, #invoice_total table td.mono {
+	font-family: monospace;
+	text-align: right;
+	padding-right: 3mm;
+	font-size: 10pt;
+}
+
+
+
+
+
+
+
+
+
+

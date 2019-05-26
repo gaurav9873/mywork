@@ -1,0 +1,259 @@
+<?php include_once 'header.php';
+
+$request_pid = $obj->DecryptClientId($_REQUEST['product_id']);
+$pid = intval($request_pid);
+$url = API_PATH.'product_detail/'.$pid.'';
+$products = $obj->getCurl($url);
+$product_detail = $products->product_detail;
+
+$pids = $product_detail[0]->pid;
+$product_name = $product_detail[0]->product_name;
+$product_description = $product_detail[0]->description;
+$product_short_description = $product_detail[0]->short_description;
+$regular_price = $product_detail[0]->regular_price;
+$large_price = $product_detail[0]->large_price;
+$disscount_price = $product_detail[0]->disscount_price;
+$product_code = $product_detail[0]->product_code;
+
+//Product Image
+
+$imgUrl = API_PATH.'product_image/'.$pid.'';
+$img_arr = $obj->getCurl($imgUrl);
+$product_image = $img_arr->product_image;
+
+//Gift item
+$gift_url = API_PATH.'gift_item/1';
+$json_data = $obj->getCurl($gift_url);
+$gift_arr = $json_data->gift_item;
+
+
+if(!isset($_SESSION['cart_products']) || !is_array($_SESSION['cart_products'])){
+    $_SESSION['cart_products']=array();
+}
+/*session_destroy();
+session_unset();*/
+
+if(isset($_POST['delivery_date'])){
+	
+    array_push($_SESSION['cart_products'], $_POST);
+	header("location:cart.php");
+	
+}
+
+/*$string  = 'regular_price';
+$encoded = gzdeflate($string);
+$decoded = gzinflate($encoded);
+echo $encoded ."<br />";
+echo $decoded;
+*/
+?>
+
+<script>
+$(document).ready(function(){
+
+	$(".fl-size").on('click', function(){
+		var psize = $(this).text();
+		$(".active-class").removeClass("active-class");
+		$(this).addClass("active-class");
+		$(".size").val(psize);
+		if(psize == 'Standard'){
+			$(".standard_price").show();
+			$(".large_price").hide();
+		}
+		
+		if(psize == 'Large'){
+			$(".standard_price").hide();
+			$(".large_price").show();
+		}
+		
+	});
+
+	$("#pfrm").on('submit', function(evt){
+	
+		var errFlag = false;
+		$(".valid").each(function(){
+			if($(this).val()==''){
+				$(this).css('border-color', 'red');
+				errFlag = true;
+			}else{}
+		});
+		
+		$(".valid").on('keypress change', function(){
+			if($(this).val()==''){
+				$(this).css('border-color', 'red');
+				errorFlag = true;
+			}
+			
+			if($(this).val()!=''){
+				$(this).css('border-color', '');
+			}
+			
+		});
+		
+		if(errFlag){
+			evt.preventDefault();
+		}
+		
+	});
+});
+</script>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="demo">
+          <div class="item">
+            <div class="clearfix prodctView">
+              <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                
+                <?php
+					foreach($product_image as $pimg){
+						 $img_id = $pimg->img_id;
+						 $full_path = $pimg->full_path;
+						 $medium_path = $pimg->medium_path;
+						 $thumbnail_path = $pimg->thumbnail_path;
+						 echo '<li data-thumb="'.IMG_PATH.$medium_path.'"> 
+								<img src="'.IMG_PATH.$medium_path.'" /> </li>';
+					}
+                ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8">
+		<form name="pfrm" id="pfrm" class="pfrm" action="" method="POST">
+        <h2><?php echo $product_name; ?></h2>
+        
+        <div class="price standard_price">£<?php echo $regular_price; ?></div>
+        <div class="price large_price" style="display:none;">£<?php echo $large_price; ?></div>
+        <div class="flowerQyt"> Qty :
+          <select name="quantity" id="quantity" class="quantity">  
+			  <?php 
+				for($i=1; $i<=10; $i++){
+					echo  '<option value="'.$i.'">'.$i.'</option>';
+				}
+			  ?>
+          </select>
+        </div>
+        <div class="shareLinks"> <a href="javascript:void(0);"><i class="fa fa-share-alt"></i>Share</a>
+          <ul>
+            <li><i class="fa fa-facebook"></i>Facebook</li>
+            <li><i class="fa fa-facebook"></i>Facebook</li>
+          </ul>
+        </div>
+        <div class="flowerSize">
+          <p><span>* </span>Size:</p>
+          <a href="javascript:void(0);" class="fl-size active-class">Standard</a>
+          <a href="javascript:void(0);" class="fl-size">Large</a>
+        </div>
+        <div class="item">
+		
+			  <p>Add chocolates and champagne.</p>
+			  <ul id="content-slider" class="content-slider">
+				<?php
+					foreach($gift_arr as $post_item){
+						$gift_name = $post_item->gift_name;
+						$regular_price = $post_item->regular_price;
+						$disccount_price = $post_item->disccount_price;
+						$description = $post_item->description;
+						$short_note = $post_item->short_note;
+						$full_path = $post_item->full_path;
+						$medium_path = $post_item->medium_path;
+						$thumbnail_path = $post_item->thumbnail_path;
+						$gift_order = $post_item->gift_order;
+						$gift_id = $post_item->gift_id;
+						$site_id = $post_item->site_id;
+						
+						echo '<li>
+							<div class="productItem"><span><img src="'.IMG_PATH.$thumbnail_path.'" alt="" /></span></div>
+							<div class="chose-opt">
+							<input type="checkbox" name="gift_items['.$gift_id.']" id="gift_items" class="gift_items" value="1" /></div>
+							<strong>£'.$regular_price.'</strong>
+						</li>';
+					}
+				?>
+			  </ul>
+			</div>
+			<div class="reviewDetail cardMassages shopNow">
+					<input type="hidden" class="size" name="pro_size" value="Standard">
+					<input type="hidden" name="product_id" value="<?php echo $pids; ?>">
+					<div class="form-group">
+						<label for="title"><span>*</span>Delivery Date :</label>
+						<input type="text" class="dp1 form-control valid" name="delivery_date" id="delivery_date" value="" readonly placeholder="Delivery Date"/>
+						<i class="fa fa-calendar"></i>
+					</div>
+					<div class="form-group">
+						<label for="promotionalcode"><span></span>Gift Card Tet :</label>
+						<textarea class="form-control" name="card_text" id="card_text"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="promotionalcode"><span>*</span>Instruction to florist :</label>
+						<textarea class="form-control valid" name="user_instruction" id="user_instruction"></textarea>
+					</div>
+					<button type="submit" class="btn btn-col btnDirectionLeft">Add To Cart </button>
+			</form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="clearfix"></div>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+      	<div class="tabs">
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Discription</label>
+            <div class="tab-content">
+                <?php echo $product_description; ?>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">Size Options</label>
+            <div class="tab-content"><?php echo $product_short_description; ?></div>
+          </div>
+        </div>	
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+				Please note that seasonal availability of individual stems may vary from those in the picture. Our professional florist may substitute flowers for a suitable alternative, similar in style, quality and value. 
+            </div>
+       </div>
+	  </div>
+    </div>
+  </div>
+</section>
+
+<link href="date-picker/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="date-picker/css/foundation-datepicker.min.css">
+
+<!-- DATEPICKER FILES -->
+<script src="date-picker/foundation-datepicker.js"></script>
+<script src="date-picker/foundation-datepicker.vi.js"></script>
+
+<!-- foundation datepicker end -->
+<script src="date-picker/foundation.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	$(function(){
+		var nowTemp = new Date();
+		var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+		jQuery('.dp1').fdatepicker({
+			format: 'dd-mm-yyyy',
+			disableDblClickSelection: true,
+			closeButton: true,
+			onRender: function (date) {
+				return date.valueOf() < now.valueOf() ? 'disabled' : '';
+			}
+		});	
+	});
+});
+</script>
+
+<?php include_once 'footer.php'; ?>

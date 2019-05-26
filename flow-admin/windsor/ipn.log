@@ -1,0 +1,112 @@
+[2017-02-07 06:39 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 822
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&settle_amount=1.19&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=22%3A39%3A34+Feb+06%2C+2017+PST&payment_status=Completed&charset=windows-1252&first_name=arun&mc_fee=0.23&exchange_rate=1.54609&notify_version=3.8&custom=&settle_currency=USD&payer_status=verified&business=info%40codexworld.com&quantity=1&verify_sign=AGs52InFHk3cJ5j80u2Udq.A26J4AbP2JkWSawo-VABFQp9x6dhhKb-.&payer_email=arun.rubyrail%40gmail.com&txn_id=9JV60559T4509170G&payment_type=instant&last_name=kumar&receiver_email=info%40codexworld.com&payment_fee=&receiver_id=KJGPZC6ZRW8NS&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=f6de0f7da377a
+[2017-02-07 06:39 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 06:39:46 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=razKej6dKJBwi0vwyuKn74Uf77lUhixXwktRlKsex4_Ifttnx8HuLktnu5SsdMqx8Uj95PvMqfgah3h2mkQOmwnLIu6qD92orptMRv7XLBAchzS5NBcyW44-B91IxZtPu6kh2XmLZqJvC0uJ8ylYxOf7c7zkEO3h3uQOI1GjiAKLTudgb2TY7QjwlWB_cFAmo-4vQ0YNCLJTBrBv-YtOmOEKyuqfUrPZYBjPtD7x7ay6nTU74h11E3qXOhtwSwpfrUiN0L7PApZQ7cvinWOrPt90nKdfo2CAH_6dww6IurPDDE7FN9FYeEFFlQlsXITV9JHZFLqO3e3M9w0jtghTggPZCOFGDxnVPFyEnRiaab_jXUQ-haIZJHOfIj3ldOJW1IS-jBPGkFitFNDFQFy5wldcOFLCOjPT9kSs7YJxCMR9Oj2I89xzf5u5p3m; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 06:39:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 06:39:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486449586067311; path=/; expires=Thu, 31-Jan-47 06:39:46 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: d2a539e0bc37
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2993396056%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 07:09:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 06:56 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 822
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&settle_amount=1.19&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=22%3A56%3A21+Feb+06%2C+2017+PST&payment_status=Completed&charset=windows-1252&first_name=arun&mc_fee=0.23&exchange_rate=1.54609&notify_version=3.8&custom=&settle_currency=USD&payer_status=verified&business=info%40codexworld.com&quantity=1&verify_sign=AdTMsxE7AMEBXH6XGnoaYeZvMyu3A4FVk5t1NpgPcItvRSB7OJqgWsPr&payer_email=arun.rubyrail%40gmail.com&txn_id=31M11271CB8951044&payment_type=instant&last_name=kumar&receiver_email=info%40codexworld.com&payment_fee=&receiver_id=KJGPZC6ZRW8NS&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=2e973effc9f23
+[2017-02-07 06:56 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 06:56:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=fkHO2I2bdg3epYLYiSgFlG93W6OmBzwMDuUpPYkaq-ku4kH4lTM8Ms8DIeh2jPxhvTOaV0b8ZTXKKSDxCG9appLCmWdkFh3Gxi8yjWhGnyC3SSzgCXZigThzoRPBnjcjrwgZtI6x6l1PN6kEX14AAq9eKNdVh_4Pr7VylUdlAIdlMQkZW3P4np2errzwZzdJVzd8llpZkTWFYK4AQ8GItzOvUG5hA57ChLT36KquwacUM-cradXhkKtF_0-Li74gLjPbh_9VAkNnkUUvFHY_Nvwpqui9Z_Tchj9uBHvSi9EKyIHRHFu3__UczH4ivWXQ0ArdxKEcjyCYq0h694tuyXO9lClLB0ohTFWRge7vDvh5J9Bp6Z7xr-H7qYHbbA5OCFD1dClgDvWaYvZ8ik1x30Shm2tHlPF4w1FqkkXNoHUYdXHMqD3sZR4S37W; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 06:56:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 06:56:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486450592342779; path=/; expires=Thu, 31-Jan-47 06:56:32 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b08b28264f49d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2691668312%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 07:26:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 08:54 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 770
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&transaction_subject=&txn_type=web_accept&payment_date=00%3A54%3A49+Feb+07%2C+2017+PST&last_name=kumar&residence_country=US&pending_reason=multi_currency&item_name=Florist+Payment&payment_gross=&mc_currency=GBP&business=gaurav.mysql%40gmail.com&payment_type=instant&protection_eligibility=Ineligible&verify_sign=AWupihapJ55v4E8OFm29kEztHiEDAdlY7IW7NZSwbdhcY2CPxtJXc00C&payer_status=verified&test_ipn=1&tax=0.00&payer_email=arun.rubyrail%40gmail.com&txn_id=6W469778X57958040&quantity=1&receiver_email=gaurav.mysql%40gmail.com&first_name=arun&payer_id=GP8NP5BVATYML&receiver_id=LKHBFH3W8XV8S&item_number=1&handling_amount=0.00&payment_status=Pending&shipping=0.00&mc_gross=1.00&custom=&charset=windows-1252&notify_version=3.8&ipn_track_id=32d6b62f526c2
+[2017-02-07 08:54 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 08:54:55 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=61wTyIJYlouEUx8oxgykXlwKWFobZO1vJsv9e5wgEOJx7aNux-0s7X1uU4b6SbvwRWo_f9CfYgM0NOn-aO3QOEKHaDsgOsxIWcaKS_QuTItGqr_un2JgQOXyPFWjf_HpHNYqGR9HjQjJ2qkC6Ur-uJ37YlKt13Hc6aJ2Y6G79VKcz_02BCNPZ9CvnJq4wEkhYojs98SR4ZfPk-xltb5ZdnICMAGB9rvZME1oMi--gfTQrVrMyZ206F9XDpxgs080M0ud75xXRugOpyAtU-sBVHpBNTk52vqvIjR0Za3haNDLWtX9g0CxDpqXcqrBgIXZZ5qXGAx2YwnPasGuBjvI_bHcabgDZQCQz-wspTTflv7tmnhuwk8kTs523aykwrtuq0vqe5ghoxdle3OswngqtFHZcaVXIm8Qm97oRZvfxBJvgBgzYlhWTBOsr1K; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 08:54:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 08:54:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486457695567011; path=/; expires=Thu, 31-Jan-47 08:54:55 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 8200e98785ced
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1602984280%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 09:24:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 08:57 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 793
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=00%3A57%3A35+Feb+07%2C+2017+PST&payment_status=Pending&charset=windows-1252&first_name=arun&mc_fee=0.23&notify_version=3.8&custom=&payer_status=verified&business=gaurav.mysql%40gmail.com&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAytw-0J7dosgacry8H3Ia67Xxo73&payer_email=arun.rubyrail%40gmail.com&txn_id=7EM48758AN9623214&payment_type=instant&last_name=kumar&receiver_email=gaurav.mysql%40gmail.com&payment_fee=&receiver_id=LKHBFH3W8XV8S&pending_reason=paymentreview&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=dd5d049221c3
+[2017-02-07 08:57 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 08:57:40 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=igFA8EkSu34XzJCTHyOKNzcoOlhLVhVsi0rqZ4Dk6CPapTVSEi--yX7K1dXFnK6yI2CSYERgx3J7s4NLXasfsAYf6CNCSSkJgiwSFcaTyN_-vLKlhJxgvvWsl1-1q2-eNqkzdjnFMs1798EEgdYTyX190hulDvv24mixuyjCSM2_HJVyACWvUgUvR8ISTpjl8RBGtmTSs7kjK1gI2vq55N4V9L99qLNQjSgP1jsPzl5ABtUvFUwpvxHsxILIAhJDlUs5NovX39JpOPekfR294jr2AeRKKu8I30iA6NGSHI4ipnlj0gxQ-A9ULY_3S-L5eA3u_SjEVX9dbaZ19KTr3U6UgRX7PUSs53pQBdjlNBmpjZmd1Wch6NKbmkBp0gxKnPSadgTOdDHAbIpbHEJC2Kb9_U2XrbMwbVisaYWD3MgBJzAubiP-vG5zcmC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 08:57:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 08:57:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486457860133356; path=/; expires=Thu, 31-Jan-47 08:57:40 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: dec6f8ac1bb31
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D76323160%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 09:27:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED

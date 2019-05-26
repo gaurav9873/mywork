@@ -1,0 +1,234 @@
+<?php //require_once 'includes/init.php';?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Print Invoice</title>
+<link href="print/midday_receipt.css" rel="stylesheet">
+
+<style>
+ @page {
+    size: A4;
+    margin-top:0.5cm;
+    margin-bottom:0;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+  }
+  body {
+    background-image: url(http://54.191.172.136:82/florist-admin/images/FDL_letterhead.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } 
+</style>
+    
+</head>
+<body class="footer-img">
+<?php
+	/*$obj =  new ConnectDb();
+	$custom_obj = new CustomFunctions();
+	
+	$order_id = $custom_obj->DecryptClientId($_REQUEST['order_id']);
+	
+	$delivery_address = $obj->get_row_by_id('op2mro9899_delivery_address', 'order_id', $order_id);
+	$post_address = $delivery_address[0];
+	$user_id = $post_address['user_id'];
+	$user_key = $post_address['user_key'];
+	$card_message = $post_address['card_message'];
+	$florist_instruction = $post_address['florist_instruction'];
+	
+	//Billing Address
+	$user_billing_address = $obj->user_billing_address($user_id);
+	$billing_address = json_decode($user_billing_address);
+	$post_bill = $billing_address[0];
+	
+	//Total Orders
+	$invoice_order_detail = $obj->invoice_order_detail($order_id);
+	$jShop = json_decode($invoice_order_detail);
+	
+	//Payment Detail
+	
+	$payement_detail = $obj->user_payment_detail($order_id);
+	$post_payement_detail = json_decode($payement_detail);
+	$item_number = $post_payement_detail[0]->item_number;
+	$payment_status = $post_payement_detail[0]->payment_status;
+	$order_status = $post_payement_detail[0]->order_status;
+	$mc_gross = $post_payement_detail[0]->mc_gross;
+	$mc_currency = $post_payement_detail[0]->mc_currency;
+	$txn_id = $post_payement_detail[0]->txn_id;
+	$delivery_charges = $post_payement_detail[0]->delivery_charges;
+	$discount_offer = $post_payement_detail[0]->discount_offer;
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";*/
+?>
+
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+          <td width="50%" align="left" valign="top"><img src="images/logoFleur.png" width="230" height=""></td>
+          <td width="50%" align="right" valign="top"><address style="margin:0; padding:0; float:right; font:18px/26px Raleway;">
+            <p style="margin:0 0 5px;">28 King Street<br>
+              Maidenhead SL6 1EF</p>
+            <p style="margin:0 0 5px;"><strong style="color:#60bb46;">Telephone:</strong><br>
+              01628 675566<br>
+              01628 624903<br>
+              01628 776336</p>
+            <p style="margin:0 0 5px;"><strong style="color:#60bb46;">email:</strong> <a style="color:#000; text-decoration:none;" href="mailto:info@fleurdelisflorist.co.uk" target="_blank">info@fleurdelisflorist.co.uk</a><br>
+              <a style="color:#000; text-decoration:none;" href="https://www.fleurdelisflorist.co.uk" target="_blank">www.fleurdelisflorist.co.uk</a></p>
+            </address></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="1250" align="left" valign="top" style="background:url(images/FDL_letterhead.jpg) left bottom no-repeat; background-size:100%;"><address style="margin:0 0 35px; padding:0; float:right; font:18px/26px Raleway; position:absolute; bottom:25px; right:25px;">
+            <p style="margin:0 0 5px;">Siddhi Enterprises Ltd<br>
+              Company Number - 08097082<br>
+              VAT Number - 138587277</p>
+            </address>
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+<div id="wrapper" class="wrapper">
+ <table class="heading" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2">
+        <p style="text-align:center; font-weight:bold;">Order Number : <?php echo $order_id; ?></p></td>
+    </tr>
+    <tr>
+      <td width="50%" align="left" valign="top"><table width="95%" border="0" cellspacing="10" cellpadding="10" class="borderBx">
+          <tr>
+            <th> <h1 class="heading">Billing Address</h1>
+              <p>Name: <?php echo $post_bill->user_first_name; ?> <br />
+                Last Name: <?php echo $post_bill->user_last_name; ?> <br />
+                Address Line 1: <?php echo $post_bill->primary_address; ?> <br />
+                Address Line 2: <?php echo $post_bill->secondary_address; ?> <br />
+                Town / City: <?php echo $post_bill->user_first_name; ?> <br />
+                County: <?php echo $post_bill->user_county; ?> <br />
+                Country: <?php echo $post_bill->user_country; ?> <br />
+                Post Code: <?php echo $post_bill->user_postcode; ?> <br />
+                Telephone Number: <?php echo $post_bill->user_phone; ?> <br />
+                Email Address: <?php echo $post_bill->user_emailid; ?></p>
+            </th>
+          </tr>
+        </table></td>
+      <td width="50%" align="right" valign="top"><table width="100%" border="0" cellspacing="10" cellpadding="10" class="borderBx">
+          <tr>
+            <th> <h1 class="heading">Delivery Address</h1>
+              <p>Name: <?php echo $post_address['user_name']; ?><br />
+                Last Name: <?php echo $post_address['user_lname']; ?><br />
+                Address Line 1: <?php echo $post_address['primary_address']; ?><br />
+                Address Line 2: <?php echo $post_address['secondary_address']; ?><br />
+                Town / City: <?php echo $post_address['city']; ?><br />
+                County: <?php echo $post_address['county']; ?><br />
+                Country: <?php echo $post_address['county']; ?><br />
+                Post Code: <?php echo $post_address['post_code']; ?><br />
+                Telephone Number: <?php echo $post_address['telephone_number']; ?><br />
+                <!--Mobile Number: <?php //echo $post_address['mobile_number']; ?><br />--> 
+                Email Address: <?php echo $post_address['email_address']; ?><br />
+                <!--Delivery Date: <?php // echo $post_address['delivery_date']; ?>--></p>
+            </th>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td colspan="2" valign="top" align="right" style="padding:0;"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f8f8f8">
+          <tr>
+            <td style="padding:10px; border:none;" width="33.33%">Order Date : <?php echo date("d-M-Y", strtotime($post_address['ordered_date'])); ?></td>
+            <td style="padding:10px; border:none;" align="center" width="33.33%">Delivery Date : <?php echo date("d-M-Y", strtotime($post_address['delivery_date'])); ?></td>
+            <td style="padding:10px; border:none;" align="right" width="33.33%">Currency : <?php echo $mc_currency; ?></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <div id="content">
+    <div id="invoice_body">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr style="background:#eee;">
+          <td style="width:10%;"><b>Sl. No.</b></td>
+          <td style="width:35%;"><b>Product</b></td>
+          <td style="width:15%;"><b>Quantity</b></td>
+          <td style="width:15%; padding:0;"><b>Product Rate</b></td>
+          <td style="width:15%; padding:0;"><b>Gift Rate</b></td>
+          <td style="width:10%;"><b>Total</b></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:0;">
+        <?php
+				$count = 1;
+				foreach($jShop as $value){  
+								
+					$product_name = $value->product_name;
+					$product_price = $value->product_price;
+					$product_qty_price = $value->product_qty_price;
+					$product_qty = $value->product_qty;
+					$product_id = $value->product_id;
+					$product_size = $value->product_size;
+					$product_code = $value->product_code;
+					$gift_name = $value->gift_name;
+					$gift_price = $value->gift_price;
+					$gift_qty_price = $value->gift_qty_price;
+					$gift_quantity = $value->gift_quantity;
+					$gift_id = $value->gift_id;
+					$flag = $value->flag;
+					if($flag == 'product'){
+            ?>
+        <tr>
+          <td style="width:10%;"><?php echo $count; ?></td>
+          <td style="width:35%; text-align:left; padding-left:10px;"><?php echo $product_name; ?><br />
+            Size : <?php echo $product_size; ?></td>
+          <td class="mono" style="width:15%;"><?php echo $product_qty; ?></td>
+          <td style="width:15%;" class="mono">£<?php echo $product_price; ?></td>
+          <td style="width:15%;" class="mono">£<?php echo $product_price; ?></td>
+          <td style="width:10%;" class="mono">£<?php echo $product_qty_price; ?></td>
+        </tr>
+        <?php } if($flag == 'gift'){ ?>
+        <tr>
+          <td style="width:10%;"><?php echo $count; ?></td>
+          <td style="width:35%; text-align:left; padding-left:10px;"><?php echo $gift_name; ?><br /></td>
+          <td class="mono" style="width:15%;"><?php echo $gift_quantity; ?></td>
+          <td style="width:15%;" class="mono"></td>
+          <td style="width:15%;" class="mono">£<?php echo $gift_price; ?></td>
+          <td style="width:10%;" class="mono">£<?php echo $gift_qty_price; ?></td>
+        </tr>
+        <?php } ?>
+        <?php $count++; } ?>
+        <tr>
+          <td colspan="4"></td>
+          <td>Shipping :</td>
+          <td class="mono">£<?php echo $delivery_charges; ?></td>
+        </tr>
+        <tr>
+          <td colspan="4"></td>
+          <td>Discount :</td>
+          <td class="mono"><?php echo $discount_offer; ?></td>
+        </tr>
+        <tr>
+          <td colspan="4"></td>
+          <td>Total :</td>
+          <td class="mono">£<?php echo $mc_gross; ?></td>
+        </tr>
+      </table>
+    </div>
+    <div id="invoice_total"> Total Amount :
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin:5px 0 0;">
+        <tr>
+          <td style="text-align:left; padding-left:10px;"><?php echo $custom_obj->convert_number_to_words($mc_gross); ?>&nbsp;only </td>
+          <td style="width:15%;"><?php echo $mc_currency; ?></td>
+          <td style="width:15%;" class="mono">£<?php echo $mc_gross; ?></td>
+        </tr>
+      </table>
+    </div>
+    <div class="cardMessage"> Card Message : <?php echo $card_message; ?></div>
+    <div class="cardMessage"> Note to Florist : <?php echo $florist_instruction; ?></div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

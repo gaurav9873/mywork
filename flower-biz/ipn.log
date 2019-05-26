@@ -1,0 +1,460 @@
+[2017-02-07 06:39 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 822
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&settle_amount=1.19&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=22%3A39%3A34+Feb+06%2C+2017+PST&payment_status=Completed&charset=windows-1252&first_name=arun&mc_fee=0.23&exchange_rate=1.54609&notify_version=3.8&custom=&settle_currency=USD&payer_status=verified&business=info%40codexworld.com&quantity=1&verify_sign=AGs52InFHk3cJ5j80u2Udq.A26J4AbP2JkWSawo-VABFQp9x6dhhKb-.&payer_email=arun.rubyrail%40gmail.com&txn_id=9JV60559T4509170G&payment_type=instant&last_name=kumar&receiver_email=info%40codexworld.com&payment_fee=&receiver_id=KJGPZC6ZRW8NS&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=f6de0f7da377a
+[2017-02-07 06:39 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 06:39:46 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=razKej6dKJBwi0vwyuKn74Uf77lUhixXwktRlKsex4_Ifttnx8HuLktnu5SsdMqx8Uj95PvMqfgah3h2mkQOmwnLIu6qD92orptMRv7XLBAchzS5NBcyW44-B91IxZtPu6kh2XmLZqJvC0uJ8ylYxOf7c7zkEO3h3uQOI1GjiAKLTudgb2TY7QjwlWB_cFAmo-4vQ0YNCLJTBrBv-YtOmOEKyuqfUrPZYBjPtD7x7ay6nTU74h11E3qXOhtwSwpfrUiN0L7PApZQ7cvinWOrPt90nKdfo2CAH_6dww6IurPDDE7FN9FYeEFFlQlsXITV9JHZFLqO3e3M9w0jtghTggPZCOFGDxnVPFyEnRiaab_jXUQ-haIZJHOfIj3ldOJW1IS-jBPGkFitFNDFQFy5wldcOFLCOjPT9kSs7YJxCMR9Oj2I89xzf5u5p3m; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 06:39:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 06:39:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486449586067311; path=/; expires=Thu, 31-Jan-47 06:39:46 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: d2a539e0bc37
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2993396056%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 07:09:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 06:56 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 822
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&settle_amount=1.19&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=22%3A56%3A21+Feb+06%2C+2017+PST&payment_status=Completed&charset=windows-1252&first_name=arun&mc_fee=0.23&exchange_rate=1.54609&notify_version=3.8&custom=&settle_currency=USD&payer_status=verified&business=info%40codexworld.com&quantity=1&verify_sign=AdTMsxE7AMEBXH6XGnoaYeZvMyu3A4FVk5t1NpgPcItvRSB7OJqgWsPr&payer_email=arun.rubyrail%40gmail.com&txn_id=31M11271CB8951044&payment_type=instant&last_name=kumar&receiver_email=info%40codexworld.com&payment_fee=&receiver_id=KJGPZC6ZRW8NS&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=2e973effc9f23
+[2017-02-07 06:56 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 06:56:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=fkHO2I2bdg3epYLYiSgFlG93W6OmBzwMDuUpPYkaq-ku4kH4lTM8Ms8DIeh2jPxhvTOaV0b8ZTXKKSDxCG9appLCmWdkFh3Gxi8yjWhGnyC3SSzgCXZigThzoRPBnjcjrwgZtI6x6l1PN6kEX14AAq9eKNdVh_4Pr7VylUdlAIdlMQkZW3P4np2errzwZzdJVzd8llpZkTWFYK4AQ8GItzOvUG5hA57ChLT36KquwacUM-cradXhkKtF_0-Li74gLjPbh_9VAkNnkUUvFHY_Nvwpqui9Z_Tchj9uBHvSi9EKyIHRHFu3__UczH4ivWXQ0ArdxKEcjyCYq0h694tuyXO9lClLB0ohTFWRge7vDvh5J9Bp6Z7xr-H7qYHbbA5OCFD1dClgDvWaYvZ8ik1x30Shm2tHlPF4w1FqkkXNoHUYdXHMqD3sZR4S37W; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 06:56:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 06:56:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486450592342779; path=/; expires=Thu, 31-Jan-47 06:56:32 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b08b28264f49d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2691668312%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 07:26:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 08:54 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 770
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&transaction_subject=&txn_type=web_accept&payment_date=00%3A54%3A49+Feb+07%2C+2017+PST&last_name=kumar&residence_country=US&pending_reason=multi_currency&item_name=Florist+Payment&payment_gross=&mc_currency=GBP&business=gaurav.mysql%40gmail.com&payment_type=instant&protection_eligibility=Ineligible&verify_sign=AWupihapJ55v4E8OFm29kEztHiEDAdlY7IW7NZSwbdhcY2CPxtJXc00C&payer_status=verified&test_ipn=1&tax=0.00&payer_email=arun.rubyrail%40gmail.com&txn_id=6W469778X57958040&quantity=1&receiver_email=gaurav.mysql%40gmail.com&first_name=arun&payer_id=GP8NP5BVATYML&receiver_id=LKHBFH3W8XV8S&item_number=1&handling_amount=0.00&payment_status=Pending&shipping=0.00&mc_gross=1.00&custom=&charset=windows-1252&notify_version=3.8&ipn_track_id=32d6b62f526c2
+[2017-02-07 08:54 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 08:54:55 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=61wTyIJYlouEUx8oxgykXlwKWFobZO1vJsv9e5wgEOJx7aNux-0s7X1uU4b6SbvwRWo_f9CfYgM0NOn-aO3QOEKHaDsgOsxIWcaKS_QuTItGqr_un2JgQOXyPFWjf_HpHNYqGR9HjQjJ2qkC6Ur-uJ37YlKt13Hc6aJ2Y6G79VKcz_02BCNPZ9CvnJq4wEkhYojs98SR4ZfPk-xltb5ZdnICMAGB9rvZME1oMi--gfTQrVrMyZ206F9XDpxgs080M0ud75xXRugOpyAtU-sBVHpBNTk52vqvIjR0Za3haNDLWtX9g0CxDpqXcqrBgIXZZ5qXGAx2YwnPasGuBjvI_bHcabgDZQCQz-wspTTflv7tmnhuwk8kTs523aykwrtuq0vqe5ghoxdle3OswngqtFHZcaVXIm8Qm97oRZvfxBJvgBgzYlhWTBOsr1K; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 08:54:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 08:54:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486457695567011; path=/; expires=Thu, 31-Jan-47 08:54:55 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 8200e98785ced
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1602984280%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 09:24:55 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-02-07 08:57 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 793
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&protection_eligibility=Ineligible&payer_id=GP8NP5BVATYML&tax=0.00&payment_date=00%3A57%3A35+Feb+07%2C+2017+PST&payment_status=Pending&charset=windows-1252&first_name=arun&mc_fee=0.23&notify_version=3.8&custom=&payer_status=verified&business=gaurav.mysql%40gmail.com&quantity=1&verify_sign=AZuRXZRkuk7frhfirfxxTkj0BDJGAytw-0J7dosgacry8H3Ia67Xxo73&payer_email=arun.rubyrail%40gmail.com&txn_id=7EM48758AN9623214&payment_type=instant&last_name=kumar&receiver_email=gaurav.mysql%40gmail.com&payment_fee=&receiver_id=LKHBFH3W8XV8S&pending_reason=paymentreview&txn_type=web_accept&item_name=Florist+Payment&mc_currency=GBP&item_number=1&residence_country=US&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=dd5d049221c3
+[2017-02-07 08:57 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Tue, 07 Feb 2017 08:57:40 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=igFA8EkSu34XzJCTHyOKNzcoOlhLVhVsi0rqZ4Dk6CPapTVSEi--yX7K1dXFnK6yI2CSYERgx3J7s4NLXasfsAYf6CNCSSkJgiwSFcaTyN_-vLKlhJxgvvWsl1-1q2-eNqkzdjnFMs1798EEgdYTyX190hulDvv24mixuyjCSM2_HJVyACWvUgUvR8ISTpjl8RBGtmTSs7kjK1gI2vq55N4V9L99qLNQjSgP1jsPzl5ABtUvFUwpvxHsxILIAhJDlUs5NovX39JpOPekfR294jr2AeRKKu8I30iA6NGSHI4ipnlj0gxQ-A9ULY_3S-L5eA3u_SjEVX9dbaZ19KTr3U6UgRX7PUSs53pQBdjlNBmpjZmd1Wch6NKbmkBp0gxKnPSadgTOdDHAbIpbHEJC2Kb9_U2XrbMwbVisaYWD3MgBJzAubiP-vG5zcmC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Fri, 05-Feb-2027 08:57:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Thu, 07-Feb-2019 08:57:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1486457860133356; path=/; expires=Thu, 31-Jan-47 08:57:40 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: dec6f8ac1bb31
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D76323160%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Tue, 07 Feb 2017 09:27:40 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:10 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 875
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A10%3A52+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&business=customer%40example.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A.CSYz4u5IILQm5wM0J0JbJiIcEuAw.ica--9Tasa3bM3FjY.naJ-1lj&payer_email=arun.rubyrail%40gmail.com&txn_id=5X281340HU709370R&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=customer%40example.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=318117&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=7a5a0ea53b528
+[2017-06-22 13:10 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:10:56 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=IairoHdS_-IF2QRg9-lciU_R4Mgzi1faDM3_VNzuTxDhYABpAaX6QcgO6HOXYRMjeEhaXxfZYL6bOwkROMYoUsklD1flK0nFpN4CUcOOQaF2cHFxpCOXAs0XZ4mPGQSdJeLlZd6720NBKCwtAi4CAl8Hn7KcDvc3VkshqKFarcBAH2EAxAqnKzfVixx6nzc7f3kkASF4V2L_ILUazyK9Z89A5hRGwfbQqELmEcXoVMlMngdse8mT7xBPXZeoBmQgHD8u3dV0FoCA3wUH6j3LBtj9aGpZgPOs9QlftQPrMjEze2yPOxQ-nfQB1BsHg07yhZ_UA-9DM4msfzhT_Pc8HlIM4vV1yfA7jbCc-SPgRm3XA9QdVZ-BvhVXxUYSHhr_X6msuCYxBXLF-vy9bNJVLwon5Sunb2a9W_DxjBfp1nbz98PTDIl8s8pw-MO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:10:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:10:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498137056500125; path=/; expires=Sat, 15-Jun-47 13:10:56 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 6e3a9f8877008
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3770764121%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 13:40:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:10 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A10%3A52+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&business=customer%40example.com&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A.CSYz4u5IILQm5wM0J0JbJiIcEuAw.ica--9Tasa3bM3FjY.naJ-1lj&payer_email=arun.rubyrail%40gmail.com&txn_id=5X281340HU709370R&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=customer%40example.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=318117&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=7a5a0ea53b528 
+[2017-06-22 13:15 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 854
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A14%3A59+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AGVEEc4wpa8s8HMmbqwXtzwy-R0pAfyHWgoWY-LPHh9TtqEQ31EBdRRT&payer_email=arun.rubyrail%40gmail.com&txn_id=0DM71317WC437053H&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=nikhil%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=315118&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=c52ead28bfc30
+[2017-06-22 13:15 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:15:07 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=C4rkTFaPB1_LvLtSosmr0zCYAceCoXiauwhBNJ_mrytnKhSQko1yy5isRBDZwRxlNQLgm3q08udhFZMWd2Fum7DRWTr5b3GK_28by0_Ing2tfDd5K3CcMTd2S0dkq3LZId5OvU4wwJPZRPQ9VFtUNYX1u5IT-nnoGEcEQZ7Uoub3WvA61IolApYNsWJYDwvmfeGfmsBnOJ7v68pZb3rRmgxknmrQp8O50NWrB8yIbfDs9ZO7V-c2ClY8wkhbjMze60APVSq4KEvz-54POpiaQkvL2EVzhO0ogdH3dkVlBEVZeR6yo6u7e45XcoOE5Uit2BI-ikEmel36ANFwwwsKkT7hxkcmune5zjvgXTkPtTxzDt6Df_Sop8Vm3iX7lYMo1hqWvRq56A_hzpD8ab-K5-UyQKQx6GqAlY67Vm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:15:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:15:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498137307177314; path=/; expires=Sat, 15-Jun-47 13:15:07 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 4d94371e2790b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3686943577%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 13:45:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:15 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A14%3A59+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AGVEEc4wpa8s8HMmbqwXtzwy-R0pAfyHWgoWY-LPHh9TtqEQ31EBdRRT&payer_email=arun.rubyrail%40gmail.com&txn_id=0DM71317WC437053H&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=nikhil%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=315118&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=c52ead28bfc30 
+[2017-06-22 13:16 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 857
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A16%3A26+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AKwUpvimaCAfmfJ-.PhckWeGqTcrArHXDo6FPKfU2Irhj7Whkwn12g4J&payer_email=arun.rubyrail%40gmail.com&txn_id=0BS28760LD6191801&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=roopesh.m%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=528119&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=4017e44a42e22
+[2017-06-22 13:16 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:16:33 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=hF-8LY4w1w8lvUgkn4TK_z_xo2WdYLgqAKi1uTap43UUFho0-8xYXEnuWpdBwIZJ75_UZkPXmNdEo57072WeJ8moPUh90xETxQioqh_FR-Xoqh8a4dcAe5-2DwTO8Ich_3OS6drCDrIS2bmvGdactIf9P40WCR4N-uQXeM9yURoIUIDfjGTNZt3SclEz-DYsNqteDWLgdH08acrPwkoceLO_Ft7ydU4y2OcP0EwstChlh1hBqUnXOZM2tcYSwZW1hKBwQZ4CiUnhBCuzRyka7sPMqmewrYuYzXtOTGUVHamHtoSkjpgsRQwtJPx1d7G5lWy4THQFsJ_3VTUEz3u0uQerxQbn0ByoWBuWhjqYqN37KUWb-Usj8QV4F77Jq76Hrfk4jU8F6829AtuZjZ9tki4S4xVYE5HVzQtDEKh80K7V_hWbeI2ZwQvkEe4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:16:34 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:16:34 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498137393876956; path=/; expires=Sat, 15-Jun-47 13:16:33 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: a2ca2c58d2e66
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D834882393%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 13:46:34 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:16 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A16%3A26+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AKwUpvimaCAfmfJ-.PhckWeGqTcrArHXDo6FPKfU2Irhj7Whkwn12g4J&payer_email=arun.rubyrail%40gmail.com&txn_id=0BS28760LD6191801&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=roopesh.m%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=528119&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=4017e44a42e22 
+[2017-06-22 13:18 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A18%3A22+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AgePMPfbDDc05TM5uouG2O9s9U74AMvmGAa4FY9CnUBKiroWShUKEnGq&payer_email=arun.rubyrail%40gmail.com&txn_id=4SY99814T94387914&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=700120&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=8309a51b6ebea
+[2017-06-22 13:18 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:18:32 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=A-7GoBqVUVV7Nw5dau6hZe97GGek3kLiubSsyogqvAFNtRkBCETgFvxSnHVGDnrPGltCjiNbM6OFiF0fH9JykDf4mwEJBwB68OElepVWMdGEm5wIV61wnJRjg0UOXbCefrmHisy6MA2Vx0AT9NodyXGWE3qf1730Pn_fHgAefMlPZHwkX93bFc4VIqCKFj_SaPeOWcDAeeA0ZAsJqzrdg6xQLbIPCgZ27rIgD10ZaYR_-666rkLp65WyQauwIra4-5yxISpUA8bDCOKpmNi-liGxpxEg8RdFdmeEOScPRSi4R_9FaXpevEHBQvHObI0DRBelqBxg_lABk9RpWm1c040PVwpQmhzy6sW8fJEbGdLL-nuyfGPeEw3zJgVbLG0IwQmuSsieBHaHEk1BzB4QGPCnC9SS9aU0YCP-bW4tR1qPJT0ahHXqGFqsGiK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:18:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:18:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498137512245136; path=/; expires=Sat, 15-Jun-47 13:18:32 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b60fdc3e38e44
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2831371097%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 13:48:32 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:18 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A18%3A22+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AgePMPfbDDc05TM5uouG2O9s9U74AMvmGAa4FY9CnUBKiroWShUKEnGq&payer_email=arun.rubyrail%40gmail.com&txn_id=4SY99814T94387914&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=700120&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=8309a51b6ebea 
+[2017-06-22 13:30 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A28%3A59+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AYDz3VVi23rWDCvyhP.w27AHO-M8AG6aXTk.K8kUboLLE4EfzhBSi25D&payer_email=arun.rubyrail%40gmail.com&txn_id=517853675U181984J&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=143121&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=fd8ad90b686d6
+[2017-06-22 13:30 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:30:11 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=5k1Y3U_l-WjLnceSWXDeBZM-ggW4vx8G7QL4kUIzUu-ww7RrWb2CXgAwY-ThEIfiFlde-1HYevpfO8V9sWF4G1NuCOk8ZZ2aQcYuttsttxlcNZl11n_l_Ehe26Vg2vJd_DRI3vCeXO5pq2e2pjQUD3uTpMl6jzu-sW4OLo-_WtJv4RbRjKb7VDSj3QAqIiPKRzC1kZI6XyX6yJb_XezTFB0FQeWCzwM6uf_Ib8vjGiDynjGVrHebD5cXxRacuxCZi3-2ihsgV9qXVyxxhpOSFsWCp5MvedtSN56N91MgX9z4MaX5Zc4XDbxofxhXS_GFDo3aj32cAPw--8dtHsPufT3pr_r2s9Q20YpAnspZcuNOfpi5Ty2y9R5j-CV5xNtF2uVXtu2fSf1dQOtAuxJl6QG9MxWpSL27ehcWvf1NkGtvbAN8E93e2lyd1e4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:30:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:30:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498138211982433; path=/; expires=Sat, 15-Jun-47 13:30:11 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 35de7629ec374
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1673939801%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 14:00:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:30 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A28%3A59+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AYDz3VVi23rWDCvyhP.w27AHO-M8AG6aXTk.K8kUboLLE4EfzhBSi25D&payer_email=arun.rubyrail%40gmail.com&txn_id=517853675U181984J&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=143121&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=fd8ad90b686d6 
+[2017-06-22 13:51 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 847
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A51%3A17+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AtXiJ8SUp8eOr4RIYcmISHSKo.kVAkODydF7HBVUqt2MJAmfIRTazZfI&payer_email=arun.rubyrail%40gmail.com&txn_id=3LD1319515791561T&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=273123&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=ae15179822c
+[2017-06-22 13:51 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 13:51:23 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Gq0MC8GGz7-5Y_rkAHWc43VCfAnsMzq0xP4M-eTJ7IfFhjCRlMbXRJAsJW5Ma_ChQZfynxPLS4BY45PTQdiZYvhKl5EvkWGyKEPQieK-iioyFyDA-HdqQh-LPvQkG4B9AjnhWwIll9D7UQ1oVOv_MNgHvhggGbaqI7uxg6VEzJugws71cmM1bmgxDFk6FRv3uJeZd5Nb1KQlYzus3_SIo1Gnzs00sAFBznapZe5a3ahmRofOjT_MnHc-tnCbwpuKKd7Cje2XYHDm3VRvWbKspUs0OjHrOhSWAMqgu10ePuWor_-UJGPoiURtii8NvSC_GxFabS434ClApayG-Lqm8YyFK1n5ZAz4a3_S9VZnj-aFmzLS_uq6gxMzulWkmLk9c3HABd0GtYQV23DeemkafiuaXVtbF-NZweMFa-WWCFbFXWd_w0u89GlLtiq; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 13:51:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 13:51:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498139483460835; path=/; expires=Sat, 15-Jun-47 13:51:23 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: eb15295a6d134
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1540049753%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 14:21:23 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 13:51 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=06%3A51%3A17+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AtXiJ8SUp8eOr4RIYcmISHSKo.kVAkODydF7HBVUqt2MJAmfIRTazZfI&payer_email=arun.rubyrail%40gmail.com&txn_id=3LD1319515791561T&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=273123&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=ae15179822c 
+[2017-06-22 14:08 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 854
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A08%3A35+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=ARyNDMbKwa-zLx7AtfPa-etrhyTVApoqPFzKs5YTfqXO0jqMSsiqImvW&payer_email=arun.rubyrail%40gmail.com&txn_id=35G65406GV865674K&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=nikhil%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=468124&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=84c958ebd4dfe
+[2017-06-22 14:08 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:08:40 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=KsQIqOomvsV984YXzMEcH-86pCPEuj-JlwujP_gWQaZfoq-vpFvangyBvtY26cNdJlRsTc60CVz8cSAPSlnij3Qhg-hle6rSLgAflHG-wk4smcTqwYj40psbDdF7CT8rJ_nh6zPqJ5r5qe0QPr9TpTGlvPPKsrZa1seRxpiR4wH-lcWz0q0LO-4rApX1EjWek39mjsQanetGp34IfTa-_Brmi0etQmj-15iZ_pWHH3H7Q4FgGvAKFUq48KFrsXXhjWztu6Z9jBXsVm9lQdwxR8dKGMsi9oX5_C67nTPKIs1-wZXrx4hbUlijPAtv4KlRKI6unz91QcDG4cT2n9aIALVfVLa8xVpOQ99V7nwwxo1m72knQbQW2qbJCE-eV0u5ZOObRpr8zEZYrqkqqq1Z4NRtxT3rcJjIR7DqwtsVUvAW4uKqJagX93VC-2W; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:08:41 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:08:41 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498140520767912; path=/; expires=Sat, 15-Jun-47 14:08:40 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: e94a55b3b855c
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1758415705%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 14:38:41 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:08 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A08%3A35+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=ARyNDMbKwa-zLx7AtfPa-etrhyTVApoqPFzKs5YTfqXO0jqMSsiqImvW&payer_email=arun.rubyrail%40gmail.com&txn_id=35G65406GV865674K&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=nikhil%40perceptive-solutions.com&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=468124&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=84c958ebd4dfe 
+[2017-06-22 14:14 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A13%3A45+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AI36sk2Aln3iC.t.mla1wMizPRcQAm8hw0p91tPCNrBXPjr0AETfiB4s&payer_email=arun.rubyrail%40gmail.com&txn_id=76T98265E6649960J&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=322125&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=26b36bb2b84fd
+[2017-06-22 14:14 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:13:59 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=3QCB6l3D3S-sGKRYPLFZLDxBcFLYe6Bw1xD6P9XkrW5ZybI7qbszh12P43OxYLo03Hzsf6zFEFnDp78Kp5T3tB_h6SDWu7TwDP4Tq9K4ynCDJH9GBI_l4GqEG6aoMXpOFququ7W0C5L8NO_bgppXne4TA_S4xE7JsvumSY6u0pukMrQgF-UkS25_3nMTTV7v3smny1z7ncE3bHCRd8v9jYrVIJ8eFop5_vmgO7QblKMMTv9E4Sh5j7NGixfKia1UPIb9z3j7V4gLljZjZCWfPgd2NWe9w-BbZvPn9lgri7ldDBrGDZQFu0ZBZeiH5b70Ay8BpBs7pioI0ySX-PUXWy59NWOHSirGD3oGfsyMlLHBCTG2-c7bHGaNy-Q129lhjIrFujzsrotUW-Wv03wwAnhOoHq-fR0BmRqEKNXBJymLKwyiaCF4hriiEXO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:14:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:14:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498140839734807; path=/; expires=Sat, 15-Jun-47 14:13:59 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: b3b7ddacafe84
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2815445849%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 14:44:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:14 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A13%3A45+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AI36sk2Aln3iC.t.mla1wMizPRcQAm8hw0p91tPCNrBXPjr0AETfiB4s&payer_email=arun.rubyrail%40gmail.com&txn_id=76T98265E6649960J&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=322125&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=26b36bb2b84fd 
+[2017-06-22 14:19 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A19%3A13+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A3Y1IabViDnLM.hMAUvK-kr83JP5AQt-Ym9bhm09qlqWV51Ia8XYoM5o&payer_email=arun.rubyrail%40gmail.com&txn_id=13J802508P017310M&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=560127&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=f3df1fea767d6
+[2017-06-22 14:19 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:19:22 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=8shnLcGhvuDLlHXfP6OT-NZ3ghFWS7tjCCo05S5D91MJTQikN4bNSOZSG1Z8SBf-Oaul35K3BUKyzFFnX-k8YY71l5O9v-qaQCdw-U7G_rgVoObvqeXW8vLY-rsqnt4apHoR1nAvs_vtHkL_y0SPrx2Aohpo0GhZPsGOSCCHz9bGiuhozWQos_mkNnWbDfHOjxkxYSwY-X4uNW1mi3l6TyHaGnkp1tzqby5wXHY8oLGxEi_58lBu2J-QcrAFVjUNKR8UIMbif2Qi1v58ohj7CyTpC1zhG4Gt93SckpWE-WLV3-t3iIqpctgxofxmMf2RLKunUkRHIq4-NwYpKKuPmUBKnR5KQIEir1xSyaxzEGbNUlSrslYH8o8x37XVncaBQszZq4XmhMbTCehMjN1kPB9UyvDZkg4m5wSzXhGubCHcI7gh4kmfXnTDbF0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:19:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:19:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498141162587045; path=/; expires=Sat, 15-Jun-47 14:19:22 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: ced1bf5f8c5ae
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3939584857%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 14:49:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:19 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A19%3A13+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=A3Y1IabViDnLM.hMAUvK-kr83JP5AQt-Ym9bhm09qlqWV51Ia8XYoM5o&payer_email=arun.rubyrail%40gmail.com&txn_id=13J802508P017310M&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=560127&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=f3df1fea767d6 
+[2017-06-22 14:31 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A31%3A02+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AZHQaA4dyQEpHZFzHmIcyG62.X4NAoFJ7-aWgbrPAW20uJtGYOBaiOTx&payer_email=arun.rubyrail%40gmail.com&txn_id=1C4480350L537112X&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=506128&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=debef85182fcc
+[2017-06-22 14:31 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:31:09 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=wlpgRtpXqc5bugshonYQbHDfFg_wJG3lA-mGeJ3Gi0N1VYw6s3eWbUEXdP8tGl0dhZ0ndV0PTzewkGMqscrd5cHhXFRpxamwJON4I_I2XbwSSSZFzjjoWUgSqW6BYzPzE_nYLkvbLs71y83he1PqKgMuB5JgJW4TRRUo--VeI7btg70D__j3959yG6RYR6YvXYGKOvRE2wCcc8q2WwSrlCZvp4QftGVXSrvQmzCG5EATWpy5b08QAXllMPzVlte-H1DjNvMJnOHpbxuvXkcswAyfydQ3LAjmDkOTreCsIXRvmlIdOhSbVOiqq6gHJa3HezNrqFpztlnGFTRU-MGYrKSa8_bCmFvi1TRf1ZBAUBxwRTKlHY1e0WqC_DBjwdKdGb5JA-YQ4_ssGgMHyaAe97dQCiGeJy4F_H_FYpwqJzSsp2s1F1SqGSPw574; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:31:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:31:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498141869037176; path=/; expires=Sat, 15-Jun-47 14:31:09 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 84b8a6296263
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2916371289%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 15:01:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:31 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A31%3A02+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AZHQaA4dyQEpHZFzHmIcyG62.X4NAoFJ7-aWgbrPAW20uJtGYOBaiOTx&payer_email=arun.rubyrail%40gmail.com&txn_id=1C4480350L537112X&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=506128&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=debef85182fcc 
+[2017-06-22 14:36 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A36%3A08+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AbVpE46Hdzh6d29Gu3X3iR8qqXBgAkGLfbjNA02abpTxBEFBmD4FAjRZ&payer_email=arun.rubyrail%40gmail.com&txn_id=6DR77462R02023818&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=774129&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=71a821ba322d4
+[2017-06-22 14:36 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:36:12 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=_uhP4oCh2PX3XiyYkhu3S4UzT-AuJzGWC_bLexcXYKK0gn5IZHtF_WUhcpUEQdwmaOQMT-k6xfYSgXeTeLLSFkF9XXRrnmwTJm6AbXi9AgGlYnfZgp3uVfUcqWbn3i5SRfdEHUeEWdx4h_GCsrMDHrkKTuAqrpFBvTSFk-dhBR6w88meQEf4fhEzRK0fM2VZX33L8Kr0yI-gyCbJf_jC-gmXAXtptdZR3s33u-4KpCeKDEflcx7LUDnAFKg975l3jqs4-_BJFBF34pYY6_eQ6ELOzuzoh1Wrq0HMK4FN7gpIQKOQqGdy6p0e87cvX5VlgA6YrEMhFqoZNXrcsR8UGP9H8XL1y-36hQrUhfEMv51-f1Be2SfXp8shDpoy-iiIByMJ9lse53c65UkmsbTC485RPps6NKMnc9dom-6YqUHEbFaCn_4ZtuUo4MK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:36:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:36:12 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498142172685708; path=/; expires=Sat, 15-Jun-47 14:36:12 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 93378f3a3c86
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3704965977%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 15:06:13 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:36 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A36%3A08+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AbVpE46Hdzh6d29Gu3X3iR8qqXBgAkGLfbjNA02abpTxBEFBmD4FAjRZ&payer_email=arun.rubyrail%40gmail.com&txn_id=6DR77462R02023818&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=774129&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=71a821ba322d4 
+[2017-06-22 14:37 UTC] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 849
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A37%3A38+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AIkKNboJiyuxWLOHUlzTd3lpqCSxA3kVcj32bBrV8VKQDNuKN6DqQX5J&payer_email=arun.rubyrail%40gmail.com&txn_id=5UX91932A4334613E&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=754130&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=c74f82ddbffcd
+[2017-06-22 14:37 UTC] HTTP response of validation request: HTTP/1.1 200 OK
+Date: Thu, 22 Jun 2017 14:37:47 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ZZ7FHbz0KoxLn3B0H7qIPzBuX7NArU36JQZLj6zSkyPVVcL9Ek9IfX_Ru-kPzdS0wQgqJsBdM5jBDyojiVqyiP013qFv0XsOzTy4vTSKWwLSAl97RIBUjOvR0mvivmXWzfly6gh75HwoEeg9Im_RvRNeULCmYypWXoV1fGkcTnc6qrFpAAzHEvt_y6WXAEAq50Cv7A5FREWua9FSPFPltbv4eq8_DySn4PwizOpBT3mzc3WvEAOQ7Df9h8sr9t6YoO8kPaH3xau5sWrmoADqkpG8yktOZYOgoiBi-TtlTYuj4r4tR3wwKBTDu6lxWJPoo-cg28cf2ef2LFvAy3gxRWexOLTjE2I_QFkNh52NqIwkVZebV1t-hRWEO9KnGHKx1krWmT3Cm0jXtKw3tilWzUOIaqeJ5ZKHr2Y_OyzZ3YRKi-XOfbDcucPxNLC; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Jun-2027 14:37:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Jun-2019 14:37:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1498142267523298; path=/; expires=Sat, 15-Jun-47 14:37:47 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 333084a7cd70
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1003899737%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 22 Jun 2017 15:07:47 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2017-06-22 14:37 UTC] Verified IPN: cmd=_notify-validate&mc_gross=45.99&protection_eligibility=Ineligible&address_status=confirmed&payer_id=GP8NP5BVATYML&address_street=1+Main+St&payment_date=07%3A37%3A38+Jun+22%2C+2017+PDT&payment_status=Pending&charset=windows-1252&address_zip=95131&first_name=arun&address_country_code=US&address_name=arun+kumar&notify_version=3.8&custom=&payer_status=verified&address_country=United+States&address_city=San+Jose&quantity=1&verify_sign=AIkKNboJiyuxWLOHUlzTd3lpqCSxA3kVcj32bBrV8VKQDNuKN6DqQX5J&payer_email=arun.rubyrail%40gmail.com&txn_id=5UX91932A4334613E&payment_type=instant&last_name=kumar&address_state=CA&receiver_email=paypal%40theflowercorner.biz&pending_reason=unilateral&txn_type=web_accept&item_name=Flowers&mc_currency=GBP&item_number=754130&residence_country=US&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=c74f82ddbffcd 

@@ -1,0 +1,224 @@
+<?php
+include_once('header.php');
+
+$obj = new ConnectDb();
+$db_rows = $obj->fetchAll('op2mro9899_add_domain');
+
+$upload_path = './uploads/'.date('Y').'/'.date('m');
+
+$images = array("full"=>array("image_resize"=>false),
+				"medium"=>array("dimension"=>array("width"=>500,"height"=>500),"image_resize"=>true),
+                "thumb"=>array("dimension"=>array("width"=>500,"height"=>500),"image_resize"=>true));
+
+if(isset($_POST['category_name'])){
+	//echo "<pre>"; print_r($_REQUEST);
+	$category_name = $_POST['category_name'];
+	$parent_id = intval($_POST['parent_id']);
+	//$cat_desc = $_POST['cat_desc'];
+	//$cat_meta_desc = $_POST['cat_meta_desc'];
+	//$cat_key_desc = $_POST['cat_key_desc'];
+	
+	//~ $formData = array('category_name' => $category_name, 'parent_category' => $parent_id, 'category_description' => $cat_desc, 'category_meta_key' => $cat_meta_desc, 'category_keyword' => $cat_key_desc);
+	//~ $ins_stmt = $obj->insert_records('op2mro9899_category', $formData);
+	//~ if($ins_stmt){
+		//~ echo 'Successfull Inserted';
+	//~ }else{
+		//~ echo 'Something went wrong';
+	//~ }
+	
+	//~ $site_val = $_POST['chk_enable'];
+	//~ foreach($site_val as $k=>$v){
+		//~ 
+		//~ $post_array = array('category_id' => 2, 'site_id' => $v);
+		//~ $ins_stmt = $obj->insert_records('op2mro9899_category_relation', $post_array);
+	//~ }
+	
+	
+	/*$upload_path = './uploads/'.date('Y').'/'.date('m');
+	
+	$images = array(
+					"full"=>array("image_resize"=>false),
+					"medium"=>array("dimension"=>array("width"=>500,"height"=>500),"image_resize"=>true),
+					"thumb"=>array("dimension"=>array("width"=>500,"height"=>500),"image_resize"=>true));				
+
+	$files = $_FILES;
+	
+	foreach($images as $key=>$image){
+		$path = $upload_path."/$key";
+		if(!is_dir($path)){
+			mkdir($path, 0777, true);
+		}
+		foreach($files['cat_img']['name'] as $file_key => $file){
+			$extension = "";
+			
+			if($files['cat_img']['type'][$file_key]=="image/jpeg") {
+				$extension = "jpeg";
+			}
+			else if($files['cat_img']['type'][$file_key]=="image/jpg") {
+				$extension = "jpg";
+			}
+			else if($files['cat_img']['type'][$file_key]=="image/png") {
+				$extension = "png";
+			}
+			else if($files['cat_img']['type'][$file_key]=="image/bmp") {
+				$extension = "bmp";
+			}
+			else if($files['cat_img']['type'][$file_key]=="image/gif") {
+				$extension = "gif";
+			}
+			$file_name = time().rand(290,7689).".$extension";
+			$destination = "$upload_path/$key/$file_name";
+			$uploaded = move_uploaded_file($files['cat_img']['tmp_name'][$file_key],$destination);
+			if(($uploaded) && ($images['image_resize'])){
+				
+				echo $upload_path/$key['full']/$file_name; die;
+				
+				$obj->make_thumb("$upload_path/full/$file_name",$key.$fileNameWithExtension,$image["dimension"]["width"],$image["dimension"]["height"]);
+			}
+		}
+		
+	}*/
+	
+	
+	
+	
+	/*$folder = './uploads';
+	$year   = date('Y');
+	$month  = date('m');
+	
+	$thumb = $folder .'/'. $year . '/' . $month . '/thumb/';
+	$full = $folder .'/'. $year . '/' . $month . '/full/';
+	if(!is_dir($thumb)){
+		mkdir($thumb, 0777, true);
+	}
+	
+	if(!is_dir($full)){
+		mkdir($full, 0777, true);
+	}*/
+	
+	
+	$path = $upload_path."/$key";
+	if(!is_dir($path)){
+		mkdir($path, 0777, true);
+	}
+	
+	$images = $_FILES["cat_img"]['name'];
+	$siteIDS = $_POST['siteIDS'];
+	$tmpArray = array_combine($_POST['siteIDS'],$_FILES['cat_img']['tmp_name']);
+	$imageArray = array_combine($_POST['siteIDS'],$_FILES['cat_img']['name']);
+	$desired_width = $desired_h = 113;
+	
+	
+	
+	
+	foreach($imageArray as $siteIds=>$imageName){
+		
+
+		$fileNameWithExtension = time().rand(290,7689).'.'.@end(explode('.',$imageName));	
+		$createimagestatus = move_uploaded_file($tmpArray[$siteIds],$full.$fileNameWithExtension);
+		$image[] = $thumb.$fileNameWithExtension;
+		if($createimagestatus){
+		  $obj->make_thumb($full.$fileNameWithExtension,$thumb.$fileNameWithExtension,$desired_width,$desired_h);
+  	   }
+	}
+	
+	
+
+	
+	
+}
+?>
+<style>
+.collectionOfFOrmGroup .form-group {
+    background: #f4f4f4 none repeat scroll 0 0;
+    border-bottom: 2px solid #e8e8e8;
+    float: left;
+    margin: 0 5px;
+    padding: 10px 20px;
+    width: 49.3%;
+}
+.collectionOfFOrmGroup {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+</style>
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well" data-original-title="">
+                <h2><i class="glyphicon glyphicon-edit"></i> Category Elements</h2>
+            </div>
+            <div class="box-content">
+                <form name="cfrm" id="cfrm" action="" method="post" role="form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Category Name</label>
+                        <input class="form-control" id="category_name" name="category_name" placeholder="Add Category Name" type="text">
+                    </div>
+                    
+                    <div class="form-group">
+						<label for="password">Parent Category</label>
+							<select name="parent_id" id="parent_id" class="form-control">
+								<option value="">Select Parent Category</option>
+								<option value="1">Category1</option>
+								<option value="2">Category2</option>
+								<option value="3">Category3</option>
+							</select>
+					</div>  
+					
+					<!--<div class="form-group">
+						<label>Category Description</label>
+						<textarea class="form-control autogrow" name="cat_desc" id="cat_desc"></textarea>
+					</div> 
+					
+					<div class="form-group">
+						<label>Category Meta Description</label>
+						<textarea class="form-control autogrow" name="cat_meta_desc" id="cat_meta_desc"></textarea>
+					</div>  
+					
+					<div class="form-group">
+						<label>Category Keyword Description</label>
+						<textarea class="form-control autogrow" name="cat_key_desc" id="cat_key_desc"></textarea>
+					</div>-->      
+        		<div class="collectionOfFOrmGroup">
+					<?php
+						foreach($db_rows as $db_img){
+							
+							$site_name = $db_img['domain_name'];
+						    $site_ids = $db_img['site_id'];
+						    
+							echo '<div class="form-group">
+							<label for="exampleInputFile">'.$site_name.'</label>
+							<input id="exampleInputFile" type="file" name="cat_img[]">
+							<input type="hidden" name="siteIDS[]" value="'.$site_ids.'">
+							<p class="help-block">Example block-level help text here.</p>
+							</div>';
+						}
+                
+ 
+				
+					foreach($db_rows as $db_val){
+						
+						$domian_name = $db_val['domain_name'];
+						$site_id = $db_val['site_id'];					
+						
+						echo '<div class="form-group">
+						<label>'.$domian_name.'</label>
+						<input data-no-uniform="true" name="chk_enable[]" value="'.$site_id.'" type="checkbox" class="iphone-toggle">
+						</div>';
+					}
+					?>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!--/span-->
+
+</div>
+
+
+<?php include_once('footer.php'); ?>
