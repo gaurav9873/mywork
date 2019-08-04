@@ -8,7 +8,6 @@ $dbobj = new ConnectDb();
 if ($obj->is_ajax()) {
 
 
-
     $count_cart = $obj->countProduct();
 
     $user_id = $_SESSION['user_id'];
@@ -19,7 +18,6 @@ if ($obj->is_ajax()) {
 
     switch ($action) {
         case "update_detail":
-
             $bill_address = filter_var($json->bill_address, FILTER_SANITIZE_STRING);
             $active_address = filter_var($json->active_address, FILTER_SANITIZE_STRING);
             $submit_val = filter_var($json->submit_val, FILTER_SANITIZE_STRING);
@@ -34,22 +32,22 @@ if ($obj->is_ajax()) {
             $user_city = filter_var($json->user_city, FILTER_SANITIZE_STRING);
             $user_country = filter_var($json->user_country, FILTER_SANITIZE_STRING);
             $user_pcode = filter_var($json->user_pcode, FILTER_SANITIZE_STRING);
-            $user_phone = filter_var($json->user_phone,FILTER_SANITIZE_STRING);
+            $user_phone = filter_var($json->user_phone, FILTER_SANITIZE_STRING);
             $user_emailid = filter_var($json->user_emailid, FILTER_VALIDATE_EMAIL);
 
             $addressID = $obj->DecryptClientId($active_address);
 
-            $update_args = array( 'user_prefix' => $user_prefix, 'user_first_name' => $user_fname, 'user_last_name' => $user_lname, 'user_postcode' => $post_code, 'primary_address' => $primary_address,
+            $update_args = array('user_prefix' => $user_prefix, 'user_first_name' => $user_fname, 'user_last_name' => $user_lname, 'user_postcode' => $post_code, 'primary_address' => $primary_address,
                 'secondary_address' => $secondary_address, 'user_city' => $user_city, 'user_country' => $user_country, 'user_pcode' => $user_pcode, 'user_phone' => $user_phone, 'user_emailid' => $user_emailid,
             );
 
 
-            if(isset($json->default_address)){
-                if($json->default_address == 1){
+            if (isset($json->default_address)) {
+                if ($json->default_address == 1) {
                     $change_staus = array('default_address' => 0);
                     $con = array('user_id' => $user_id);
                     $changeStmt = $dbobj->update_record('op2mro9899_customers_billing_address', $change_staus, $con);
-                    if($changeStmt){
+                    if ($changeStmt) {
                         $update_args['default_address'] = 1;
                     }
                 }
@@ -57,13 +55,13 @@ if ($obj->is_ajax()) {
 
             $condition = array('id' => $addressID);
             $updateStmt = $dbobj->update_record('op2mro9899_customers_billing_address', $update_args, $condition);
-            if($updateStmt['status'] = 'true'){
-                if($count_cart == 0){
+            if ($updateStmt['status'] = 'true') {
+                if ($count_cart == 0) {
                     echo json_encode(array('status' => 'true', 'cart_val' => 'null', 'message' => '<font face="verdana" color="green">Record has been updated successfully</font>'));
-                }else{
+                } else {
                     echo json_encode(array('status' => 'true', 'cart_val' => 'true', 'message' => 'review'));
                 }
-            }else{
+            } else {
                 echo json_encode(array('status' => 'false', 'message' => '<font face="verdana" color="red">Something went wrong please try again later</font>'));
             }
 
@@ -77,16 +75,15 @@ if ($obj->is_ajax()) {
             $array_args = array('user_email' => $email_id, 'user_password' => $user_password, 'site_id' => SITE_ID);
             $condition = array('id' => $user_id);
             $upStmt = $dbobj->update_record('op2mro9899_customers_login', $array_args, $condition);
-            if($upStmt['status'] == 'true'){
+            if ($upStmt['status'] == 'true') {
                 echo json_encode(array('status' => 'true', 'message' => '<font face="verdana" color="green">Password change successfully</font>'));
-            }else{
+            } else {
                 echo json_encode(array('status' => 'false', 'message' => '<font face="verdana" color="red">Something went wrong please try again later</font>'));
             }
             break;
 
 
     }
-
 
 
 }
